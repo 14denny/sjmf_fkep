@@ -41,7 +41,7 @@ class Tentang extends CI_Controller {
 		$this->ViewMdl->loadView("tentang/kegiatan",$data);
 	}
 
-	public function rektor(){
+	public function sk_rektor(){
 		$this->load->model("ViewMdl");
 
 		$data = array(
@@ -50,7 +50,7 @@ class Tentang extends CI_Controller {
 		$this->ViewMdl->loadView("tentang/sk_rektor",$data);
 	}
 
-	public function kebijakan(){
+	public function kebijakan_mutu(){
 		$this->load->model("ViewMdl");
 
 		$data = array(

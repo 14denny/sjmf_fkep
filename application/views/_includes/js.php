@@ -12,7 +12,4 @@
 <script src="<?php echo base_url('assets/app-assets/js/search.js') ?>"></script>
 <script src="<?php echo base_url('assets/app-assets/js/custom/custom-script.js') ?>"></script>
 <!-- END THEME  JS-->
-<!-- BEGIN PAGE LEVEL JS-->
-<script src="<?php echo base_url('assets/app-assets/js/scripts/dashboard-ecommerce.js') ?>"></script>
-<script src="<?php echo base_url('assets/app-assets/js/scripts/data-tables.js') ?>"></script>
-<!-- END PAGE LEVEL JS-->
+
