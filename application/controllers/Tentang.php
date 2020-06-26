@@ -58,4 +58,10 @@ class Tentang extends CI_Controller {
 		);
 		$this->ViewMdl->loadView("tentang/kebijakan_mutu",$data);
 	}
+
+	///////////////////////// function for submit changes /////////////////////////
+	public function submit_visi(){
+		$data = $this->input->post("isi");
+		echo $data;
+	}
 }
