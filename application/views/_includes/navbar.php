@@ -32,9 +32,9 @@
 				<ul class="left hide-on-med-and-down" id="ul-horizontal-nav" data-menu="menu-navigation">
 					<li><a class="bold ls_index" href="<?= base_url('index') ?>" data-target="DashboardDropdown"><i class="material-icons">home</i><span><span class="dropdown-title" data-i18n="Beranda">Beranda</span></span></a>
 					</li>
-					<li><a class="dropdown-menu ls_tentang_kebijakan_mutu ls_tentang_kegiatan ls_tentang_program_sasaran ls_tentang_sk_rektor ls_tentang_struktur_organisasi ls_tentang_visi_misi" href="Javascript:void(0)" data-target="TemplatesDropdown"><i class="material-icons">info</i><span><span class="dropdown-title" data-i18n="Templates">Tentang Kami</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
+					<li><a class="dropdown-menu ls_tentang_edit_visi_misi ls_tentang_kebijakan_mutu ls_tentang_kegiatan ls_tentang_program_sasaran ls_tentang_sk_rektor ls_tentang_struktur_organisasi ls_tentang_visi_misi" href="Javascript:void(0)" data-target="TemplatesDropdown"><i class="material-icons">info</i><span><span class="dropdown-title" data-i18n="Templates">Tentang Kami</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
 						<ul class="dropdown-content dropdown-horizontal-list" id="TemplatesDropdown">
-							<li class="ls_tentang_visi_misi" data-menu=""><a href="<?= base_url('tentang/visi') ?>"><span data-i18n="Visi, Misi, & Tujuan">Visi, Misi & Tujuan</span></a>
+							<li class="ls_tentang_visi_misi ls_tentang_edit_visi_misi" data-menu=""><a href="<?= base_url('tentang/visi') ?>"><span data-i18n="Visi, Misi, & Tujuan">Visi, Misi & Tujuan</span></a>
 							</li>
 							<li class="ls_tentang_struktur_organisasi" data-menu=""><a href="<?= base_url('tentang/struktur') ?>"><span data-i18n="Struktur Organisasi & Tupoksi">Struktur Organisasi & Tupoksi</span></a>
 							</li>
