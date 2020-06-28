@@ -5,7 +5,7 @@ class Download extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function download(){
+	public function index(){
 		$this->load->model("ViewMdl");
 
 		$data = array(

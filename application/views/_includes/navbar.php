@@ -32,33 +32,33 @@
 				<ul class="left hide-on-med-and-down" id="ul-horizontal-nav" data-menu="menu-navigation">
 					<li><a class="bold ls_index" href="<?= base_url('index') ?>" data-target="DashboardDropdown"><i class="material-icons">home</i><span><span class="dropdown-title" data-i18n="Beranda">Beranda</span></span></a>
 					</li>
-					<li><a class="dropdown-menu" href="Javascript:void(0)" data-target="TemplatesDropdown"><i class="material-icons">info</i><span><span class="dropdown-title" data-i18n="Templates">Tentang Kami</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
+					<li><a class="dropdown-menu ls_tentang_edit_visi_misi ls_tentang_kebijakan_mutu ls_tentang_kegiatan ls_tentang_program_sasaran ls_tentang_sk_rektor ls_tentang_struktur_organisasi ls_tentang_visi_misi" href="Javascript:void(0)" data-target="TemplatesDropdown"><i class="material-icons">info</i><span><span class="dropdown-title" data-i18n="Templates">Tentang Kami</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
 						<ul class="dropdown-content dropdown-horizontal-list" id="TemplatesDropdown">
-							<li data-menu=""><a href="<?= base_url('tentang/visi_misi') ?>"><span data-i18n="Visi, Misi, & Tujuan">Visi, Misi & Tujuan</span></a>
+							<li class="ls_tentang_visi_misi ls_tentang_edit_visi_misi" data-menu=""><a href="<?= base_url('tentang/visi') ?>"><span data-i18n="Visi, Misi, & Tujuan">Visi, Misi & Tujuan</span></a>
 							</li>
-							<li data-menu=""><a href="<?= base_url('tentang/struktur_organisasi') ?>"><span data-i18n="Struktur Organisasi & Tupoksi">Struktur Organisasi & Tupoksi</span></a>
+							<li class="ls_tentang_struktur_organisasi" data-menu=""><a href="<?= base_url('tentang/struktur') ?>"><span data-i18n="Struktur Organisasi & Tupoksi">Struktur Organisasi & Tupoksi</span></a>
 							</li>
-							<li data-menu=""><a href="<?= base_url('tentang/program_sasaran') ?>"><span data-i18n="Program dan Sasaran">Program dan Sasaran</span></a>
+							<li class="ls_tentang_program_sasaran" data-menu=""><a href="<?= base_url('tentang/program') ?>"><span data-i18n="Program dan Sasaran">Program dan Sasaran</span></a>
 							</li>
-							<li data-menu=""><a href="<?= base_url('tentang/kegiatan') ?>"><span data-i18n="Kegiatan">Kegiatan</span></a>
+							<li class="ls_tentang_kegiatan" data-menu=""><a href="<?= base_url('tentang/kegiatan') ?>"><span data-i18n="Kegiatan">Kegiatan</span></a>
 							</li>
-							<li data-menu=""><a href="<?= base_url('tentang/sk_rektor') ?>"><span data-i18n="SK Rektor Terkait BPMA">SK Rektor Terkait SJMF</span></a>
+							<li class="ls_tentang_sk_rektor" data-menu=""><a href="<?= base_url('tentang/sk_rektor') ?>"><span data-i18n="SK Rektor Terkait BPMA">SK Rektor Terkait SJMF</span></a>
 							</li>
-							<li data-menu=""><a href="<?= base_url('tentang/kebijakan_mutu') ?>"><span data-i18n="Kebijakan Mutu">Kebijakan Mutu</span></a>
+							<li class="ls_tentang_kebijakan_mutu" data-menu=""><a href="<?= base_url('tentang/kebijakan_mutu') ?>"><span data-i18n="Kebijakan Mutu">Kebijakan Mutu</span></a>
 							</li>
 						</ul>
 					</li>
-					<li><a class="bold " href="<?= base_url('pengurus') ?>" data-target="DashboardDropdown"><i class="material-icons">people</i><span><span class="dropdown-title" data-i18n="Pengurus BPMA UI">Pengurus SJMF FKEP</span></span></a>
+					<li><a class="bold ls_pengurus" href="<?= base_url('pengurus') ?>" data-target="DashboardDropdown"><i class="material-icons">people</i><span><span class="dropdown-title" data-i18n="Pengurus BPMA UI">Pengurus SJMF FKEP</span></span></a>
 					</li>
-					<li><a class="bold " href="<?= base_url('produk') ?>" data-target="DashboardDropdown"><i class="material-icons">weekend</i><span><span class="dropdown-title" data-i18n="Produk">Produk</span></span></a>
+					<li><a class="bold ls_produk" href="<?= base_url('produk') ?>" data-target="DashboardDropdown"><i class="material-icons">weekend</i><span><span class="dropdown-title" data-i18n="Produk">Produk</span></span></a>
 					</li>
-					<li><a class="bold " href="<?= base_url('akreditasi') ?>" data-target="DashboardDropdown"><i class="material-icons">check</i><span><span class="dropdown-title" data-i18n="Akreditasi">Akreditasi</span></span></a>
+					<li><a class="bold ls_akreditasi" href="<?= base_url('akreditasi') ?>" data-target="DashboardDropdown"><i class="material-icons">check</i><span><span class="dropdown-title" data-i18n="Akreditasi">Akreditasi</span></span></a>
 					</li>
-					<li><a class="bold " href="<?= base_url('download') ?>" data-target="DashboardDropdown"><i class="material-icons">file_download</i><span><span class="dropdown-title" data-i18n="Download">Download</span></span></a>
+					<li><a class="bold ls_download" href="<?= base_url('download') ?>" data-target="DashboardDropdown"><i class="material-icons">file_download</i><span><span class="dropdown-title" data-i18n="Download">Download</span></span></a>
 					</li>
-					<li><a class="bold " href="<?= base_url('galeri_foto') ?>" data-target="DashboardDropdown"><i class="material-icons">monochrome_photos</i><span><span class="dropdown-title" data-i18n="Galeri Foto">Galeri Foto</span></span></a>
+					<li><a class="bold ls_galeri_foto" href="<?= base_url('galeri_foto') ?>" data-target="DashboardDropdown"><i class="material-icons">monochrome_photos</i><span><span class="dropdown-title" data-i18n="Galeri Foto">Galeri Foto</span></span></a>
 					</li>
-					<li><a class="bold " href="<?= base_url('kontak') ?>" data-target="DashboardDropdown"><i class="material-icons">contact_phone</i><span><span class="dropdown-title" data-i18n="Kontak">Kontak</span></span></a>
+					<li><a class="bold ls_kontak" href="<?= base_url('kontak') ?>" data-target="DashboardDropdown"><i class="material-icons">contact_phone</i><span><span class="dropdown-title" data-i18n="Kontak">Kontak</span></span></a>
 					</li>
 				</ul>
 			</div>

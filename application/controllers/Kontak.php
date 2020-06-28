@@ -5,7 +5,7 @@ class Kontak extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function kontak(){
+	public function index(){
 		$this->load->model("ViewMdl");
 
 		$data = array(

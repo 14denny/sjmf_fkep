@@ -5,7 +5,7 @@ class Akreditasi extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function akreditasi(){
+	public function index(){
 		$this->load->model("ViewMdl");
 
 		$data = array(

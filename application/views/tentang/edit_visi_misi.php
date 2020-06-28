@@ -32,9 +32,22 @@
 							<div class="col s12">
 								<div class="card">
 									<div class="card-content">
-										<a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="float-right">Edit</button></a>
-										<div class="row ql-editor">
-											<?php echo $konten ?>
+										<h4 class="card-title">Edit Konten Visi Misi</h4>
+										<div class="row">
+											<button class="float-right mr-1" data-action="result" id="toggle">Lihat Hasil</button>
+											<div class="col s12">
+												<div id="snow-wrapper">
+													<div id="snow-container">
+														<div class="editor">
+															<?php echo $konten ?>
+														</div>
+													</div>
+												</div>
+												<div id="overview" class="ql-editor" style="display: none;">
+												</div>
+												<p><br>
+												<button id="submit">Selesai</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -47,6 +60,10 @@
 		</div>
 	</div>
 </div>
+
+<form style="display: none;" id="form_submit" action="<?php echo base_url('tentang/submit_visi') ?>" method="post">
+	<input id="input_isi" type="text" name="isi" value="">
+</form>
 
 
 <script>
