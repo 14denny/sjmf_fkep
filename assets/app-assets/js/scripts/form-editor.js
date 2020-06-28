@@ -14,39 +14,13 @@
   Font.whitelist = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
   Quill.register(Font, true);
 
-  // Bubble Editor
-
-  var bubbleEditor = new Quill('#bubble-container .editor', {
-    bounds: '#bubble-container .editor',
-    modules: {
-      'formula': true,
-      'syntax': true
-    },
-    theme: 'bubble'
-  });
-
   // Snow Editor
-
-  var snowEditor = new Quill('#snow-container .editor', {
+  var editor = new Quill('#snow-container .editor', {
     bounds: '#snow-container .editor',
     modules: {
-      'formula': true,
-      'syntax': true,
-      'toolbar': '#snow-container .quill-toolbar'
-    },
-    theme: 'snow'
-  });
-
-  // Full Editor
-
-  var fullEditor = new Quill('#full-container .editor', {
-    bounds: '#full-container .editor',
-    modules: {
-      'formula': true,
-      'syntax': true,
       'toolbar': [
         [{
-          'font': []
+          'font': ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu']
         }, {
           'size': []
         }],
@@ -80,14 +54,13 @@
         }],
         ['link', 'image', 'video', 'formula'],
         ['clean']
-      ],
+      ]
     },
     theme: 'snow'
   });
+
   // add browser default class to quill select 
   var quillSelect = $("select[class^='ql-'], input[data-link]" );
   quillSelect.addClass("browser-default");
-
-  var editors = [bubbleEditor, snowEditor, fullEditor];
 
 })(window, document, jQuery);
