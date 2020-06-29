@@ -1,0 +1,163 @@
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/quill/quill.snow.css') ?>">
+
+<!-- BEGIN: Page Main-->
+<div id="main">
+	<div class="row">
+		<div class="col s12">
+			<div class="container">
+				<div class="section">
+					<!-- Snow Editor start -->
+					<section class="snow-editor">
+						<div class="row">
+							<div class="col s12">
+								<div class="card">
+									<div class="card-content">
+										<h4 class="card-title">Edit Konten Visi Misi</h4>
+										<div class="row">
+											<button class="float-right mr-1" data-action="result" id="toggle">Lihat Hasil</button>
+											<div class="col s12">
+												<div id="snow-wrapper">
+													<div id="snow-container">
+														<div class="editor">
+															<?php echo $konten ?>
+														</div>
+													</div>
+												</div>
+												<div id="overview" class="ql-editor" style="display: none;">
+												</div>
+												<br>
+												<button id="submit">Selesai</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="content-overlay"></div>
+		</div>
+	</div>
+</div>
+<!-- END: Page Main-->
+
+<form style="display: none;" id="form_submit" action="<?php echo base_url('index/submit_beranda') ?>" method="post">
+	<input id="input_isi" type="text" name="isi" value="">
+</form>
+
+<script>
+	$(document).ready(function() {
+
+		////////////////////////// Load Page Script //////////////////////////
+		$('<link/>', {
+			rel: 'stylesheet',
+			type: 'text/css',
+			src: '<?php echo base_url('assets/app-assets/vendors/quill/monokai-sublime.min.css') ?>'
+		}).appendTo('head');
+		$('<link/>', {
+			rel: 'stylesheet',
+			type: 'text/css',
+			src: '<?php echo base_url('assets/app-assets/vendors/quill/quill.snow.css') ?>'
+		}).appendTo('head');
+
+		$('<script/>', {
+			type: 'text/javascript',
+			src: '<?php echo base_url('assets/app-assets/vendors/quill/highlight.min.js') ?>'
+		}).appendTo('head');
+		$('<script/>', {
+			type: 'text/javascript',
+			src: '<?php echo base_url('assets/app-assets/vendors/quill/quill.min.js') ?>'
+		}).appendTo('head');
+
+		// var Font = Quill.import('formats/font');
+		// Font.whitelist = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
+		// Quill.register(Font, true);
+
+		// Editor
+		var editor = new Quill('#snow-container .editor', {
+			bounds: '#snow-container .editor',
+			modules: {
+				'toolbar': [
+					[{
+						'font': []
+					}, {
+						'size': []
+					}],
+					['bold', 'italic', 'underline', 'strike'],
+					[{
+						'color': []
+					}, {
+						'background': []
+					}],
+					[{
+						'script': 'super'
+					}, {
+						'script': 'sub'
+					}],
+					['blockquote', 'code-block'],
+					[{
+						'list': 'ordered'
+					}, {
+						'list': 'bullet'
+					}, {
+						'indent': '-1'
+					}, {
+						'indent': '+1'
+					}],
+					['direction', {
+						'align': []
+					}],
+					['link', 'image', 'video', 'formula'],
+					['clean']
+				]
+			},
+			theme: 'snow'
+		});
+
+		// add browser default class to quill select 
+		var quillSelect = $("select[class^='ql-'], input[data-link]");
+		quillSelect.addClass("browser-default");
+
+		////////////////////////////// End Load Page Script //////////////////////////////
+
+
+		//handler untuk tombol lihat hasil
+		$("#toggle").click(function() {
+			let btn = $(this)
+			let hasil = $("#overview")
+			let snow_wrapper = $("#snow-wrapper")
+			if(btn.data("action") === "result"){ // kalo data-action === result artinya editor yang visible
+				//ambil data dari editor dan masukkan ke div overview
+				hasil.html(editor.root.innerHTML)
+	
+				snow_wrapper.slideUp('normal', function() {
+					hasil.slideDown()
+				})
+
+				btn.data("action", "edit")
+				btn.html("Ubah")
+			} else { // kalo data-action === edit (else) artinya overview hasil yang visible
+				hasil.slideUp('normal', function() {
+					snow_wrapper.slideDown()
+				})
+
+				btn.data("action", "result")
+				// $(this).html("Lihat Hasil")
+				btn.html("Lihat Hasil")
+			}
+		})
+
+		//handler untuk tombol submit
+		$("#submit").click(function(){
+			if(!confirm("Anda yakin telah selesai melakukan perubahan?")){
+				return;
+			}
+
+			let data = editor.root.innerHTML;
+
+			$("#input_isi").val(data);
+			$("#form_submit").submit();
+		})
+	})
+</script>
