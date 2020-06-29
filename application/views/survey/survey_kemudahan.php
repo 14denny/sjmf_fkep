@@ -26,7 +26,7 @@
 			<div class="col s12">
 				<blockquote>
 					<p>
-						Klik tombol <span class="card-alert card  blue light-3 white-text pd-text">&nbsp;Cara Pengisian Survey&nbsp;</span>untuk
+						Klik tombol <span class="card-alert card  blue darken-2 white-text pd-text">&nbsp;Cara Pengisian Survey&nbsp;</span>untuk
 						informasi.
 					</p>
 				</blockquote>
@@ -51,7 +51,7 @@
 		</div>
 	</div>
 </div>
-<!--START HOW TO SURVEY-->
+<!--END HOW TO SURVEY-->
 
 <div class="row">
 	<div class="col s12 m12 l12">

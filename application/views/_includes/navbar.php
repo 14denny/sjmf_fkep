@@ -63,7 +63,7 @@
 							</li>
 							<li class="ls_survey_survey_perkuliahan" data-menu=""><a href="<?= base_url('survey/perkuliahan') ?>"><span data-i18n="Survey Perkuliahan">Survey Perkuliahan</span></a>
 							</li>
-							<li class="ls_survey_hasil_survey" data-menu=""><a href="<?= base_url('survey/hasil') ?>"><span data-i18n="Survey Hasil">Survey Hasil</span></a>
+							<li class="ls_survey_hasil_survey" data-menu=""><a href="<?= base_url('survey/hasil') ?>"><span data-i18n="Hasil Survey">Hasil Survey</span></a>
 							</li>
 						</ul>
 					</li>

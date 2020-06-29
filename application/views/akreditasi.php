@@ -25,7 +25,7 @@
 						<span class="">Status Akreditasi Program Studi di Unsyiah oleh BAN PT/ LAM PT Kes. </span>&nbsp;
 					</p>
 					<p>
-						<span class="card-alert card blue darken-3 white-text pd-text">&ensp;Per 4 Februari 2020. &ensp; </span>&nbsp;
+						<span class="card-alert card blue darken-2 white-text pd-text">&ensp;Per 4 Februari 2020. &ensp; </span>&nbsp;
 					</p>
 
 				</blockquote>

@@ -23,7 +23,7 @@
 			<div class="col s12">
 				<blockquote>
 					<p>
-						Klik tombol <span class="card-alert card  blue light-3 white-text pd-text">&nbsp;Cara Pengisian Survey&nbsp;</span>untuk
+						Klik tombol <span class="card-alert card  blue darken-2 white-text pd-text">&nbsp;Cara Pengisian Survey&nbsp;</span>untuk
 						informasi.
 					</p>
 				</blockquote>
@@ -53,9 +53,9 @@
 		</div>
 	</div>
 </div>
-<!--START HOW TO SURVEY-->
+<!--END HOW TO SURVEY-->
 
-<!--FORM STUDENT ID-->
+<!--START FORM STUDENT ID-->
 <div class="row">
 	<div class="col s12 m12 l12">
 		<div id="inline-form" class="card card card-default scrollspy">
@@ -65,12 +65,12 @@
 					<div class="row">
 						<div class="input-field col m4 s6">
 							<i class="material-icons prefix">payment</i>
-							<input id="npm" type="number" class="validate">
-							<label for="npm">Nomor Pokok Mahasiswa</label>
+							<input id="npm" type="number" class="validate" required>
+							<label for="npm">NPM</label>
 						</div>
 						<div class="input-field col m4 s6">
 							<i class="material-icons prefix">account_circle</i>
-							<input id="nama_lengkap" type="text" class="validate">
+							<input id="nama_lengkap" type="text" class="validate" required>
 							<label for="nama_lengkap">Nama Lengkap</label>
 						</div>
 						<div class="input-field col m4 s12">
@@ -85,8 +85,7 @@
 		</div>
 	</div>
 </div>
-
-<!--FORM STUDENT ID-->
+<!--END FORM STUDENT ID-->
 
 <div class="row">
 	<div class="col s12 m12 l12">
