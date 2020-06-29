@@ -53,35 +53,3 @@ $route['default_controller'] = 'index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-//AWAL: menu tentang kami
-$route['tentang/visi_misi'] = 'tentang/visi';
-$route['tentang/struktur_organisasi'] = 'tentang/struktur';
-$route['tentang/program_sasaran'] = 'tentang/program';
-$route['tentang/kegiatan'] = 'tentang/kegiatan';
-$route['tentang/sk_rektor'] = 'tentang/rektor';
-$route['tentang/kebijakan_mutu'] = 'tentang/kebijakan';
-//AKHIR: menu tentang kami
-
-//AWAL: menu pengurus
-$route['pengurus'] = 'pengurus/pengurus';
-//AKHIR: menu pengurus
-
-//AWAL: menu produk
-$route['produk'] = 'produk/produk';
-//AKHIR: menu produk
-
-//AWAL: menu akreditasi
-$route['akreditasi'] = 'akreditasi/akreditasi';
-//AKHIR: menu akreditasi
-
-//AWAL: menu download
-$route['download'] = 'download/download';
-//AKHIR: menu download
-
-//AWAL: menu galeri foto
-$route['galeri_foto'] = 'galeri/galeri_foto';
-//AKHIR: menu galeri foto
-
-//AWAL: menu kontak
-$route['kontak'] = 'kontak/kontak';
-//AKHIR: menu kontak
