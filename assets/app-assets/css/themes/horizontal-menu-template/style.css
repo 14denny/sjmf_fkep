@@ -2,6 +2,12 @@
 	Style file contain theme components style
 -------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,600);
+
+/*.downsized*/
+/*{*/
+/*	font-size: xx-small !important;*/
+/*}*/
+
 .materialize-red
 {
     background-color: #e51c23 !important;
@@ -9344,11 +9350,11 @@ nav.display-none.search-sm .nav-wrapper form .input-field i
 .sidenav li > a,
 .sidenav li a.collapsible-header
 {
-    font-weight: 400;
-    line-height: 44px;
+	font-weight: 400;
+	line-height: 44px;
 
-    height: 44px;
-    padding: 0 16px !important;
+	height: 44px;
+	padding: 0 10px !important;
 }
 
 .sidenav li > a > i.material-icons,
