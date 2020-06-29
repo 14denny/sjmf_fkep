@@ -9665,7 +9665,7 @@ input[type=range]::-ms-thumb
 
 .sidenav li > a
 {
-	font-size: 14px;
+	font-size: 11px !important;
 	font-weight: 500;
 	line-height: 48px;
 
