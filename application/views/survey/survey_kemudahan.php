@@ -1,3 +1,4 @@
+<!--START BREADCRUMBS-->
 <div class="breadcrumbs-inline pt-2 pb-1" id="breadcrumbs-wrapper">
 	<div class="container">
 		<div class="row">
@@ -16,8 +17,9 @@
 		</div>
 	</div>
 </div>
+<!--END BREADCRUMBS-->
 
-<!--Using Color-->
+<!--START HOW TO SURVEY-->
 <div class="row">
 	<div class="col s12">
 		<div class="row">
@@ -49,126 +51,189 @@
 		</div>
 	</div>
 </div>
+<!--START HOW TO SURVEY-->
 
 <div class="row">
 	<div class="col s12 m12 l12">
+		<!-- disini alert message -->
+		<div id="notification" style="display: block">
+			<div class="card-alert card #81c784 green lighten-2">
+				<div class="card-content white-text">
+					<p>
+						<i class="material-icons">check</i> Jawaban Anda berhasil dikirim.</p>
+				</div>
+			</div>
+		</div>
+		<!-- akhir alert message -->
 		<div id="prism" class="card card card-default scrollspy">
 			<div class="card-content">
-				<h4 class="card-title">Survey Kemudahan dan Kelengkapan Informasi Web</h4>
+				<h4 class="card-title" style="margin-left: 33%; font-weight: bolder">Survey Kemudahan dan Kelengkapan
+					Informasi Web</h4>
 				<div class="row">
-					<div class="col s12">
-						<table class="table table-striped table-hover">
-							<thead>
-							<tr style="font-size: medium; font-weight: bolder">
-								<td>Pertanyaan</td>
-								<td>Jawaban</td>
-							</tr>
-							</thead>
-							<tbody>
-							<tr>
-								<td>1. Seberapa mudah Anda menggunakan Web ini?</td>
-								<td>
-									<div class="container" style="padding: 20px">
-										<div class="row">
-											<form>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>1</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>2</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>3</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>4</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>5</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>6</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>7</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>8</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>9</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>10</span>
-												</label>
-											</form>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2. Seberapa informatif Web ini?</td>
-								<td>
-									<div class="container" style="padding: 20px">
-										<div class="row">
-											<form>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>1</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>2</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>3</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>4</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>5</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>6</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>7</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>8</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>9</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>10</span>
-												</label>
-											</form>
-										</div>
-									</div>
-								</td>
-							</tr>
-							</tbody>
-						</table>
+					<div class="col s12" style="padding-top: 15px">
+						<!--START FORM SURVEY-->
+						<form>
+							<table class="table table-striped table-hover">
+								<thead>
+								<tr style="font-size: larger; font-weight: bolder; padding-left: 50px">
+									<td></td>
+									<td style="padding-left: 12px">1</td>
+									<td style="padding-left: 12px">2</td>
+									<td style="padding-left: 12px">3</td>
+									<td style="padding-left: 12px">4</td>
+									<td style="padding-left: 12px">5</td>
+									<td style="padding-left: 12px">6</td>
+									<td style="padding-left: 12px">7</td>
+									<td style="padding-left: 12px">8</td>
+									<td style="padding-left: 12px">9</td>
+									<td style="padding-left: 9px">10</td>
+								</tr>
+								</thead>
+								<tbody>
+								<!--START QUESTION 1-->
+								<tr>
+									<td style="padding-top: 20px">1. Seberapa mudah Anda menggunakan Web ini?</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+								</tr>
+								<!--END QUESTION 1-->
+
+								<!--START QUESTION 2-->
+								<tr>
+									<td style="padding-top: 20px">2. Seberapa informatif Web ini?</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+									<td style="padding-top: 20px">
+										<label>
+											<input class="with-gap" name="group1" type="radio" required/>
+											<span></span>
+										</label>
+									</td>
+								</tr>
+								<!--END QUESTION 2-->
+								</tbody>
+							</table>
+							<div class="row">
+								<div class="input-field col s12">
+									<button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
+										<i class="material-icons right">send</i>
+									</button>
+								</div>
+							</div>
+						</form>
+						<!--END FORM SURVEY-->
 					</div>
 				</div>
 			</div>
