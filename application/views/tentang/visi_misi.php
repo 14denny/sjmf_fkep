@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s10 m12 l12 breadcrumbs-left">
-				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF FKEP</span>
+				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF Fakultas Keperawatan Unsyiah</span>
 				</h5>
 				<ol class="breadcrumbs mb-0">
 					<li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Beranda</a>
@@ -32,8 +32,8 @@
 							<div class="col s12">
 								<div class="card">
 									<div class="card-content">
-										<a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="float-right">Edit</button></a>
-										<div class="row ql-editor">
+										<a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="btn waves-effect waves-light cyan">Edit Konten Visi Misi</button></a>
+										<div class="row ql-editor" style="white-space: normal;">
 											<?php echo $konten ?>
 										</div>
 									</div>

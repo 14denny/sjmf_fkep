@@ -28,12 +28,12 @@
 					<!-- INI BATAS AKHIR SLIDER -->
 				</div>
 
-				<div class="container" style="padding-top: 30px; padding-bottom: 30px">
+				<div class="container" style="padding-top: 20px; padding-bottom: 20px">
 					<div class="col s8">
 						<div class="card">
-							<a href="<?php echo base_url("index/edit_beranda") ?>"><button class="float-right">Edit</button></a>
 							<div class="card-content">
-								<div class="row ql-editor">
+								<a href="<?php echo base_url("index/edit_beranda") ?>" class="btn waves-effect waves-light cyan">Edit Konten</a>
+								<div class="row ql-editor" style="white-space: normal;">
 									<?php echo $konten ?>
 								</div>
 							</div>

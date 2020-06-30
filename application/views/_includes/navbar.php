@@ -69,11 +69,11 @@
 					</li>
 
 					<!-- AWAL PRODUK-->
-					<li><a class="bold ls_produk" href="<?= base_url('produk') ?>" data-target="DashboardDropdown"><i class="material-icons">weekend</i><span><span class="dropdown-title" data-i18n="Produk">Produk</span></span></a>
-					</li>
+					<!-- <li><a class="bold ls_produk" href="<?= base_url('produk') ?>" data-target="DashboardDropdown"><i class="material-icons">weekend</i><span><span class="dropdown-title" data-i18n="Produk">Produk</span></span></a>
+					</li> -->
 
 					<!-- AWAL AKREDITASI-->
-					<li><a class="bold ls_akreditasi" href="<?= base_url('akreditasi') ?>" data-target="DashboardDropdown"><i class="material-icons">check</i><span><span class="dropdown-title" data-i18n="Akreditasi">Akreditasi</span></span></a>
+					<li><a class="bold ls_akreditasi ls_edit_akreditasi" href="<?= base_url('akreditasi') ?>" data-target="DashboardDropdown"><i class="material-icons">check</i><span><span class="dropdown-title" data-i18n="Akreditasi">Akreditasi</span></span></a>
 					</li>
 
 					<!-- AWAL DOWNLOAD-->
@@ -81,7 +81,7 @@
 					</li>
 
 					<!-- AWAL GALERI FOTO-->
-					<li><a class="bold ls_galeri_foto" href="<?= base_url('galeri_foto') ?>" data-target="DashboardDropdown"><i class="material-icons">monochrome_photos</i><span><span class="dropdown-title" data-i18n="Galeri Foto">Galeri Foto</span></span></a>
+					<li><a class="bold ls_galeri_foto" href="<?= base_url('galeri') ?>" data-target="DashboardDropdown"><i class="material-icons">monochrome_photos</i><span><span class="dropdown-title" data-i18n="Galeri Foto">Galeri Foto</span></span></a>
 					</li>
 
 					<!-- AWAL KONTAK-->
