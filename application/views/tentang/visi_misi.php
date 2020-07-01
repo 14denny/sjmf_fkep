@@ -32,7 +32,7 @@
 							<div class="col s12">
 								<div class="card">
 									<div class="card-content">
-										<a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="btn waves-effect waves-light cyan">Edit Konten Visi Misi</button></a>
+										<!-- <a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="btn waves-effect waves-light cyan">Edit Konten Visi Misi</button></a> -->
 										<div class="row ql-editor" style="white-space: normal;">
 											<?php echo $konten ?>
 										</div>

@@ -25,29 +25,29 @@ class Index extends CI_Controller {
         return $this->ViewMdl->loadView("index", $data);
 	}
 
-	public function edit_beranda(){
-		$this->load->model('BerandaMdl');
-		$this->load->model('ViewMdl');
+	// public function edit_beranda(){
+	// 	$this->load->model('BerandaMdl');
+	// 	$this->load->model('ViewMdl');
 
-		$konten = $this->BerandaMdl->getKonten();
+	// 	$konten = $this->BerandaMdl->getKonten();
 		
-		$data = array(
-			"page_title" => "Edit Isi Beranda",
-			"konten" => $konten->konten
-		);
+	// 	$data = array(
+	// 		"page_title" => "Edit Isi Beranda",
+	// 		"konten" => $konten->konten
+	// 	);
 
-        return $this->ViewMdl->loadView("edit_beranda", $data);
+    //     return $this->ViewMdl->loadView("edit_beranda", $data);
 
-	}
+	// }
 
-	///////////////////////// function for submit changes /////////////////////////
-	public function submit_beranda()
-	{
-		$this->load->model("ViewMdl");
-		$this->load->model("BerandaMdl");
-		$isi = $this->input->post("isi");
-		$this->BerandaMdl->updateBeranda($isi);
-		return redirect(base_url());
-	}
+	// ///////////////////////// function for submit changes /////////////////////////
+	// public function submit_beranda()
+	// {
+	// 	$this->load->model("ViewMdl");
+	// 	$this->load->model("BerandaMdl");
+	// 	$isi = $this->input->post("isi");
+	// 	$this->BerandaMdl->updateBeranda($isi);
+	// 	return redirect(base_url());
+	// }
 
 }

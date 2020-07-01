@@ -32,7 +32,7 @@
 					<div class="col s8">
 						<div class="card">
 							<div class="card-content">
-								<a href="<?php echo base_url("index/edit_beranda") ?>" class="btn waves-effect waves-light cyan">Edit Konten</a>
+								<!-- <a href="<?php echo base_url("index/edit_beranda") ?>" class="btn waves-effect waves-light cyan">Edit Konten</a> -->
 								<div class="row ql-editor" style="white-space: normal;">
 									<?php echo $konten ?>
 								</div>

@@ -59,114 +59,114 @@
 					<div class="col s12">
 						<table class="table table-striped table-hover">
 							<thead>
-							<tr style="font-size: medium; font-weight: bolder">
-								<td>Pertanyaan</td>
-								<td>Jawaban</td>
-							</tr>
+								<tr style="font-size: medium; font-weight: bolder">
+									<td>Pertanyaan</td>
+									<td>Jawaban</td>
+								</tr>
 							</thead>
 							<tbody>
-							<tr>
-								<td>1. Seberapa mudah Anda menggunakan Web ini?</td>
-								<td>
-									<div class="container" style="padding: 20px">
-										<div class="row">
-											<form>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>1</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>2</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>3</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>4</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>5</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>6</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>7</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>8</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>9</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>10</span>
-												</label>
-											</form>
+								<tr>
+									<td>1. Seberapa mudah Anda menggunakan Web ini?</td>
+									<td>
+										<div class="container" style="padding: 20px">
+											<div class="row">
+												<form>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>1</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>2</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>3</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>4</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>5</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>6</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>7</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>8</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>9</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>10</span>
+													</label>
+												</form>
+											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2. Seberapa informatif Web ini?</td>
-								<td>
-									<div class="container" style="padding: 20px">
-										<div class="row">
-											<form>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>1</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>2</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>3</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>4</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>5</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>6</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>7</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>8</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>9</span>
-												</label>
-												<label>
-													<input class="with-gap" name="group1" type="radio"/>
-													<span>10</span>
-												</label>
-											</form>
+									</td>
+								</tr>
+								<tr>
+									<td>2. Seberapa informatif Web ini?</td>
+									<td>
+										<div class="container" style="padding: 20px">
+											<div class="row">
+												<form>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>1</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>2</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>3</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>4</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>5</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>6</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>7</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>8</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>9</span>
+													</label>
+													<label>
+														<input class="with-gap" name="group1" type="radio" />
+														<span>10</span>
+													</label>
+												</form>
+											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
+									</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -176,3 +176,17 @@
 	</div>
 </div>
 
+<script>
+	$(document).ready(function() {
+		$('<script/>', {
+			type: 'text/javascript',
+			src: '<?php echo base_url('assets/app-assets/vendors/sweetalert/sweetalert.min.js') ?>'
+		}).appendTo('head');
+
+		swal({
+			title: "This page is under construction",
+			icon: '<?php echo base_url('assets/app-assets/images/gallery/maintenance.png') ?>',
+			padding: '5em'
+		});
+	})
+</script>

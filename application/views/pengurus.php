@@ -31,7 +31,7 @@
 					</blockquote>
 					<div class="row">
 						<div class="col s12">
-							<a href="<?php echo base_url("pengurus/edit") ?>"><button class="float-right btn waves-effect waves-light cyan" >Edit Pengurus</button></a>
+							<!-- <a href="<?php echo base_url("pengurus/edit") ?>"><button class="float-right btn waves-effect waves-light cyan" >Edit Pengurus</button></a> -->
 						</div>
 						<!-- AWAL TABEL -->
 						<div class="col s12 mt-2">

@@ -19,18 +19,18 @@ class Tentang extends CI_Controller
 		$this->ViewMdl->loadView("tentang/visi_misi", $data);
 	}
 
-	public function edit_visi_misi()
-	{
-		$this->load->model("ViewMdl");
-		$this->load->model("TentangMdl");
+	// public function edit_visi_misi()
+	// {
+	// 	$this->load->model("ViewMdl");
+	// 	$this->load->model("TentangMdl");
 
-		$konten = $this->TentangMdl->getKontenVisiMisi();
-		$data = array(
-			"page_title" => "Visi, Misi, & Tujuan",
-			"konten" => $konten->konten == null ? "" : $konten->konten
-		);
-		$this->ViewMdl->loadView("tentang/edit_visi_misi", $data);
-	}
+	// 	$konten = $this->TentangMdl->getKontenVisiMisi();
+	// 	$data = array(
+	// 		"page_title" => "Visi, Misi, & Tujuan",
+	// 		"konten" => $konten->konten == null ? "" : $konten->konten
+	// 	);
+	// 	$this->ViewMdl->loadView("tentang/edit_visi_misi", $data);
+	// }
 
 	public function struktur()
 	{
@@ -83,12 +83,12 @@ class Tentang extends CI_Controller
 	}
 
 	///////////////////////// function for submit changes /////////////////////////
-	public function submit_visi()
-	{
-		$this->load->model("ViewMdl");
-		$this->load->model("TentangMdl");
-		$isi = $this->input->post("isi");
-		$status = $this->TentangMdl->updateVisiMisi($isi);
-		return redirect(base_url("tentang/visi"));
-	}
+	// public function submit_visi()
+	// {
+	// 	$this->load->model("ViewMdl");
+	// 	$this->load->model("TentangMdl");
+	// 	$isi = $this->input->post("isi");
+	// 	$status = $this->TentangMdl->updateVisiMisi($isi);
+	// 	return redirect(base_url("tentang/visi"));
+	// }
 }

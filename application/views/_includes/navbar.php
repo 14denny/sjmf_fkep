@@ -53,11 +53,11 @@
 					</li>
 
 					<!-- AWAL PENGURUS SJMF FKEP-->
-					<li><a class="bold ls_pengurus" href="<?= base_url('pengurus') ?>" data-target="DashboardDropdown"><i class="material-icons">people</i><span><span class="dropdown-title" data-i18n="Pengurus SJMF FKEP">Pengurus SJMF FKEP</span></span></a>
+					<li><a class="bold ls_pengurus" href="<?= base_url('pengurus') ?>" data-target="DashboardDropdown"><i class="material-icons">people</i><span><span class="dropdown-title" data-i18n="Pengelola SJMF">Pengurus SJMF</span></span></a>
 					</li>
 
 					<!-- AWAL SURVEY-->
-					<li><a class="dropdown-menu ls_survey_survey_kemudahan ls_survey_survey_perkuliahan" href="Javascript:void(0)" data-target="surveyDropdown"><i class="material-icons">folder_open</i><span><span class="dropdown-title" data-i18n="Survey">Survey</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
+					<li><a class="dropdown-menu ls_survey_survey_kemudahan ls_survey_survey_perkuliahan ls_survey_hasil_survey" href="Javascript:void(0)" data-target="surveyDropdown"><i class="material-icons">folder_open</i><span><span class="dropdown-title" data-i18n="Survey">Survey</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
 						<ul class="dropdown-content dropdown-horizontal-list" id="surveyDropdown">
 							<li class="ls_survey_survey_kemudahan" data-menu=""><a href="<?= base_url('survey/kemudahan') ?>"><span data-i18n="Survey Kemudahan dan Kelengkapan Informasi Web">Survey Kemudahan dan Kelengkapan Informasi Web</span></a>
 							</li>
@@ -77,7 +77,7 @@
 					</li>
 
 					<!-- AWAL DOWNLOAD-->
-					<li><a class="bold ls_download" href="<?= base_url('download') ?>" data-target="DashboardDropdown"><i class="material-icons">file_download</i><span><span class="dropdown-title" data-i18n="Download">Download</span></span></a>
+					<li><a class="bold ls_download" href="<?= base_url('download') ?>" data-target="DashboardDropdown"><i class="material-icons">file_download</i><span><span class="dropdown-title" data-i18n="Download">Dokumen</span></span></a>
 					</li>
 
 					<!-- AWAL GALERI FOTO-->

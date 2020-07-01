@@ -13,3 +13,19 @@
 		</div>
 	</div>
 </div>
+
+
+<div id="main">
+	<div class="row">
+		<div class="col s12">
+			<div class="container">
+				<div class="card">
+					<div class="card-content" style="text-align: center;">
+						<h3>This page is under construction</h3>
+						<img src="<?php echo base_url('assets/app-assets/images/gallery/maintenance.png') ?>" alt="Under Construction" style="width: 50%;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

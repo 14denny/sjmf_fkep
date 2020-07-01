@@ -30,7 +30,7 @@
 
 				</blockquote>
 				<p class="mb-1" style="text-align: right;">
-					<a href="<?php echo base_url("akreditasi/edit") ?>" class="btn waves-effect waves-light cyan">Edit Akreditasi</a>
+					<!-- <a href="<?php echo base_url("akreditasi/edit") ?>" class="btn waves-effect waves-light cyan">Edit Akreditasi</a> -->
 				</p>
 				<div class="row">
 					<div class="col s12">
