@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/quill/quill.snow.css') ?>">
+
 <div class="breadcrumbs-inline pt-2 pb-1" id="breadcrumbs-wrapper">
 	<div class="container">
 		<div class="row">
@@ -20,13 +22,27 @@
 	<div class="row">
 		<div class="col s12">
 			<div class="container">
-				<div class="card">
-					<div class="card-content" style="text-align: center;">
-						<h3>This page is under construction</h3>
-						<img src="<?php echo base_url('assets/app-assets/images/gallery/maintenance.png') ?>" alt="Under Construction" style="width: 50%;">
-					</div>
+				<div class="section">
+					<!-- Snow Editor start -->
+					<section class="snow-editor">
+						<div class="row">
+							<div class="col s12">
+								<div class="card">
+									<div class="card-content">
+										<p style="text-align: right;">
+											<a href="<?php echo base_url('tentang/edit_struktur') ?>"><button class="btn waves-effect waves-light cyan">Edit Konten Struktur Organisasi dan Tupokasi</button></a>
+										</p>
+										<div class="row ql-editor" style="white-space: normal;">
+											<?php echo $konten ?>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
+			<div class="content-overlay"></div>
 		</div>
 	</div>
 </div>

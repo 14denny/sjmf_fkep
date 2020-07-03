@@ -1,5 +1,9 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/quill/quill.snow.css') ?>">
 
+<div class="blue lighten-4">
+	<marquee style="margin:10px 0"><span style="color:rgba(0,0,0,1)">Pengumuman</span></marquee>
+</div>
+
 <!-- BEGIN: Page Main-->
 <div id="main">
 	<div class="row">
@@ -32,7 +36,7 @@
 					<div class="col s8">
 						<div class="card">
 							<div class="card-content">
-								<!-- <a href="<?php echo base_url("index/edit_beranda") ?>" class="btn waves-effect waves-light cyan">Edit Konten</a> -->
+								<a href="<?php echo base_url("index/edit_beranda") ?>" class="btn waves-effect waves-light cyan">Edit Konten</a>
 								<div class="row ql-editor" style="white-space: normal;">
 									<?php echo $konten ?>
 								</div>

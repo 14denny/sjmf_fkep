@@ -5,7 +5,9 @@
 			<div class="nav-wrapper">
 				<ul class="left">
 					<li>
-						<h1 class="logo-wrapper"><a class="brand-logo darken-1" href="<?= base_url('index') ?>"><img src="<?php echo base_url('assets/app-assets/images/logo/materialize-logo.png') ?>" alt="materialize logo"><span class="logo-text hide-on-med-and-down">Materialize</span></a></h1>
+						<h1 class="logo-wrapper"><a class="brand-logo darken-1" href="<?= base_url('index') ?>"><img src="<?php echo base_url('assets/app-assets/images/logo/materialize-logo.png') ?>" alt="materialize logo">
+						<span class="logo-text hide-on-med-and-down">SJMF Keperawatan</span>
+					</a></h1>
 					</li>
 				</ul>
 				<div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
@@ -35,11 +37,11 @@
 					</li>
 
 					<!-- AWAL TENTANG-->
-					<li><a class="dropdown-menu ls_tentang_edit_visi_misi ls_tentang_kebijakan_mutu ls_tentang_kegiatan ls_tentang_program_sasaran ls_tentang_sk_rektor ls_tentang_struktur_organisasi ls_tentang_visi_misi" href="Javascript:void(0)" data-target="TemplatesDropdown"><i class="material-icons">info</i><span><span class="dropdown-title" data-i18n="Templates">Tentang Kami</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
+					<li><a class="dropdown-menu ls_tentang_edit_visi_misi ls_tentang_kebijakan_mutu ls_tentang_kegiatan ls_tentang_program_sasaran ls_tentang_sk_rektor ls_tentang_struktur_organisasi ls_tentang_visi_misi ls_tentang_edit_struktur_organisasi" href="Javascript:void(0)" data-target="TemplatesDropdown"><i class="material-icons">info</i><span><span class="dropdown-title" data-i18n="Templates">Tentang Kami</span><i class="material-icons right">keyboard_arrow_down</i></span></a>
 						<ul class="dropdown-content dropdown-horizontal-list" id="TemplatesDropdown">
 							<li class="ls_tentang_visi_misi ls_tentang_edit_visi_misi" data-menu=""><a href="<?= base_url('tentang/visi') ?>"><span data-i18n="Visi, Misi, & Tujuan">Visi, Misi & Tujuan</span></a>
 							</li>
-							<li class="ls_tentang_struktur_organisasi" data-menu=""><a href="<?= base_url('tentang/struktur') ?>"><span data-i18n="Struktur Organisasi & Tupoksi">Struktur Organisasi & Tupoksi</span></a>
+							<li class="ls_tentang_struktur_organisasi ls_tentang_edit_struktur_organisasi" data-menu=""><a href="<?= base_url('tentang/struktur') ?>"><span data-i18n="Struktur Organisasi & Tupoksi">Struktur Organisasi & Tupoksi</span></a>
 							</li>
 							<li class="ls_tentang_program_sasaran" data-menu=""><a href="<?= base_url('tentang/program') ?>"><span data-i18n="Program dan Sasaran">Program dan Sasaran</span></a>
 							</li>
@@ -63,7 +65,7 @@
 							</li>
 							<li class="ls_survey_survey_perkuliahan" data-menu=""><a href="<?= base_url('survey/perkuliahan') ?>"><span data-i18n="Survey Perkuliahan">Survey Perkuliahan</span></a>
 							</li>
-							<li class="ls_survey_hasil_survey" data-menu=""><a href="<?= base_url('survey/hasil') ?>"><span data-i18n="Survey Hasil">Survey Hasil</span></a>
+							<li class="ls_survey_hasil_survey" data-menu=""><a href="<?= base_url('survey/hasil') ?>"><span data-i18n="Survey Hasil">Hasil Survey</span></a>
 							</li>
 						</ul>
 					</li>
