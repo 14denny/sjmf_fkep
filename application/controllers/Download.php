@@ -9,7 +9,7 @@ class Download extends CI_Controller {
 		$this->load->model("ViewMdl");
 
 		$data = array(
-			"page_title" => "Download SJMF FKEP"
+			"page_title" => "Dokumen SJMF Fakultas Keperawatan Unsyiah"
 		);
 		$this->ViewMdl->loadView("download",$data);
 	}

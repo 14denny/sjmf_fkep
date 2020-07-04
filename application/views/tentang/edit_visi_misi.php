@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s10 m12 l12 breadcrumbs-left">
-				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF FKEP</span>
+				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF Fakultas Keperawatan Unsyiah</span>
 				</h5>
 				<ol class="breadcrumbs mb-0">
 					<li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Beranda</a>
@@ -34,7 +34,7 @@
 									<div class="card-content">
 										<h4 class="card-title">Edit Konten Visi Misi</h4>
 										<div class="row">
-											<button class="float-right mr-1" data-action="result" id="toggle">Lihat Hasil</button>
+											<button class="float-right mr-1 btn waves-effect waves-light cyan" data-action="result" id="toggle">Lihat Hasil</button>
 											<div class="col s12">
 												<div id="snow-wrapper">
 													<div id="snow-container">
@@ -43,10 +43,10 @@
 														</div>
 													</div>
 												</div>
-												<div id="overview" class="ql-editor" style="display: none;">
+												<div id="overview" class="ql-editor" style="display: none; white-space: normal;">
 												</div>
 												<p><br>
-												<button id="submit">Selesai</button>
+												<button class="btn waves-effect waves-light cyan" id="submit">Selesai</button>
 											</div>
 										</div>
 									</div>

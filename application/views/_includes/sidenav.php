@@ -30,7 +30,7 @@
 		</li>
 
 		<!-- AWAL PENGURUS SJMF FKEP -->
-		<li><a class="waves-effect waves-cyan " href="<?= base_url('pengurus') ?>" data-target="DashboardDropdown"><i class="material-icons">people</i><span><span class="dropdown-title" data-i18n="Pengurus BPMA UI">Pengurus SJMF FKEP</span></span></a>
+		<li><a class="waves-effect waves-cyan " href="<?= base_url('pengurus') ?>" data-target="DashboardDropdown"><i class="material-icons">people</i><span><span class="dropdown-title" data-i18n="Pengurus SJMF">Pengelola SJMF</span></span></a>
 		</li>
 
 		<!-- AWAL SURVEY -->
@@ -48,15 +48,15 @@
 		</li>
 
 		<!-- AWAL PRODUK -->
-		<li><a class="waves-effect waves-cyan " href="<?= base_url('produk') ?>" data-target="DashboardDropdown"><i class="material-icons">weekend</i><span><span class="dropdown-title" data-i18n="Produk">Produk</span></span></a>
-		</li>
+		<!-- <li><a class="waves-effect waves-cyan " href="<?= base_url('produk') ?>" data-target="DashboardDropdown"><i class="material-icons">weekend</i><span><span class="dropdown-title" data-i18n="Produk">Produk</span></span></a>
+		</li> -->
 
 		<!-- AWAL AKREDITASI -->
 		<li><a class="waves-effect waves-cyan " href="<?= base_url('akreditasi') ?>" data-target="DashboardDropdown"><i class="material-icons">check</i><span><span class="dropdown-title" data-i18n="Akreditasi">Akreditasi</span></span></a>
 		</li>
 
 		<!-- AWAL DOWNLOAD -->
-		<li><a class="waves-effect waves-cyan " href="<?= base_url('download') ?>" data-target="DashboardDropdown"><i class="material-icons">file_download</i><span><span class="dropdown-title" data-i18n="Download">Download</span></span></a>
+		<li><a class="waves-effect waves-cyan " href="<?= base_url('download') ?>" data-target="DashboardDropdown"><i class="material-icons">file_download</i><span><span class="dropdown-title" data-i18n="Download">Dokumen</span></span></a>
 		</li>
 
 		<!-- AWAL GALERI FOTO -->

@@ -8,11 +8,9 @@
 				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF Fakultas Keperawatan Unsyiah</span>
 				</h5>
 				<ol class="breadcrumbs mb-0">
-					<li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Beranda</a>
+					<li class="breadcrumb-item"><a href="#">Beranda</a>
 					</li>
-					<li class="breadcrumb-item"><a href="#">Tentang Kami</a>
-					</li>
-					<li class="breadcrumb-item active">Visi, Misi & Tujuan
+					<li class="breadcrumb-item active">Edit
 					</li>
 				</ol>
 			</div>
@@ -21,6 +19,7 @@
 </div>
 <!-- AKHIR BREADCRUMBS -->
 
+<!-- BEGIN: Page Main-->
 <div id="main">
 	<div class="row">
 		<div class="col s12">
@@ -32,9 +31,22 @@
 							<div class="col s12">
 								<div class="card">
 									<div class="card-content">
-										<a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="btn waves-effect waves-light cyan">Edit Konten Visi Misi</button></a>
-										<div class="row ql-editor" style="white-space: normal;">
-											<?php echo $konten ?>
+										<h4 class="card-title">Edit Konten Beranda</h4>
+										<div class="row">
+											<button class="float-right mr-1 btn waves-effect waves-light cyan" data-action="result" id="toggle">Lihat Hasil</button>
+											<div class="col s12">
+												<div id="snow-wrapper">
+													<div id="snow-container">
+														<div class="editor">
+															<?php echo $konten ?>
+														</div>
+													</div>
+												</div>
+												<div id="overview" class="ql-editor" style="display: none; white-space: normal;">
+												</div>
+												<br>
+												<button class="btn waves-effect waves-light cyan" id="submit">Selesai</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -47,7 +59,11 @@
 		</div>
 	</div>
 </div>
+<!-- END: Page Main-->
 
+<form style="display: none;" id="form_submit" action="<?php echo base_url('index/submit_beranda') ?>" method="post">
+	<input id="input_isi" type="text" name="isi" value="">
+</form>
 
 <script>
 	$(document).ready(function() {

@@ -3,12 +3,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s10 m12 l12 breadcrumbs-left">
-				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF FKEP</span>
+				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF Fakultas Keperawatan Unsyiah</span>
 				</h5>
 				<ol class="breadcrumbs mb-0">
 					<li class="breadcrumb-item"><a href="#">Beranda</a>
 					</li>
-					<li class="breadcrumb-item"><a href="#">Pengurus SJMF FKEP</a>
+					<li class="breadcrumb-item"><a href="#">Pengurus SJMF</a>
 					</li>
 					<li class="breadcrumb-item active">Edit
 					</li>
@@ -26,14 +26,14 @@
 				<div class="card-content">
 					<blockquote>
 						<p>
-							<span class="">&ensp;Pengurus SJMF FKEP tahun 2020-2022. &ensp; </span>&nbsp;
+							<span class="">&ensp;Pengurus SJMF Fakultas Keperawatan Unsyiah tahun 2020-2022. &ensp; </span>&nbsp;
 						</p>
-
 					</blockquote>
+
 					<div class="row">
 						<div class="col s12">
-							<button id="kurang" class="float-right">-</button>
-							<button id="tambah" class="float-right">+</button>
+							<button id="kurang" class="float-right btn waves-effect waves-light cyan">-</button>
+							<button id="tambah" class="float-right btn waves-effect waves-light cyan">+</button>
 						</div>
 						<!-- AWAL TABEL -->
 						<div class="col s12 mt-2">
@@ -52,7 +52,7 @@
 										</div>
 									<?php } ?>
 								</div>
-								<button>Selesai</button>
+								<button class="btn waves-effect waves-light cyan">Selesai</button>
 							</form>
 
 						</div>
