@@ -6,7 +6,7 @@
 				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF FKEP</span>
 				</h5>
 				<ol class="breadcrumbs mb-0">
-					<li class="breadcrumb-item"><a href="#">Beranda</a>
+					<li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Beranda</a>
 					</li>
 					<li class="breadcrumb-item active">Pengurus SJMF FKEP
 					</li>

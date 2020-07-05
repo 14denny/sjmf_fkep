@@ -12,7 +12,9 @@
 					</li>
 					<li class="breadcrumb-item"><a href="#">Tentang Kami</a>
 					</li>
-					<li class="breadcrumb-item active">Edit Struktur Organisasi & Tupoksi
+					<li class="breadcrumb-item"><a href="<?php echo base_url("tentang/struktur") ?>">Struktur Organisasi dan Tupoksi</a>
+					</li>
+					<li class="breadcrumb-item active">Edit
 					</li>
 				</ol>
 			</div>
