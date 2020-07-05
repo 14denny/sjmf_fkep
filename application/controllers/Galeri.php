@@ -5,7 +5,7 @@ class Galeri extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function galeri_foto(){
+	public function index(){
 		$this->load->model("ViewMdl");
 
 		$data = array(

@@ -425,7 +425,7 @@ $.extend( Responsive.prototype, {
 
 	/**
 	 * Create the internal `columns` array with information about the columns
-	 * for the table. This _includes determining which breakpoints the column
+	 * for the table. This includes determining which breakpoints the column
 	 * will appear in, based upon class names in the column, which makes up the
 	 * vast majority of this method.
 	 *
@@ -653,7 +653,7 @@ $.extend( Responsive.prototype, {
 					}
 				}
 
-				// $().closest() _includes itself in its check
+				// $().closest() includes itself in its check
 				var row = dt.row( $(this).closest('tr') );
 
 				// Check event type to do an action
