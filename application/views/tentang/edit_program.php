@@ -12,7 +12,9 @@
 					</li>
 					<li class="breadcrumb-item"><a href="#">Tentang Kami</a>
 					</li>
-					<li class="breadcrumb-item active">Edit Program dan Sasaran
+					<li class="breadcrumb-item"><a href="<?php echo base_url("tentang/program") ?>">Program dan Sasaran</a>
+					</li>
+					<li class="breadcrumb-item active">Edit
 					</li>
 				</ol>
 			</div>

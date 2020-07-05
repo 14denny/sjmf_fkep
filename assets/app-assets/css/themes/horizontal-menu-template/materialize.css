@@ -10675,7 +10675,7 @@ input[type=range]::-ms-thumb
 
 .slider .indicators .indicator-item.active
 {
-    background-color: #4caf50;
+    background-color: #2aacaf;
 }
 
 .carousel

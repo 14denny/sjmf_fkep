@@ -6,11 +6,11 @@
 				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF Fakultas Keperawatan Unsyiah</span>
 				</h5>
 				<ol class="breadcrumbs mb-0">
-					<li class="breadcrumb-item"><a href="#">Beranda</a>
+					<li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Beranda</a>
 					</li>
-					<li class="breadcrumb-item"><a href="#">Pengurus SJMF</a>
+					<li class="breadcrumb-item"><a href="<?php echo base_url("pengurus") ?>">Pengurus SJMF</a>
 					</li>
-					<li class="breadcrumb-item active">Edit Pengurus SJMF FKEP
+					<li class="breadcrumb-item active">Edit
 					</li>
 				</ol>
 			</div>
