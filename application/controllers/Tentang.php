@@ -6,6 +6,7 @@ class Tentang extends CI_Controller
 		parent::__construct();
 		$this->load->model("ViewMdl");
 		$this->load->model("TentangMdl");
+		$this->load->model("AdminMdl");
 	}
 
 
@@ -22,6 +23,9 @@ class Tentang extends CI_Controller
 
 	public function edit_visi_misi()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/visi"));
+		}
 		$konten = $this->TentangMdl->getKontenVisiMisi();
 		$data = array(
 			"page_title" => "Visi, Misi, & Tujuan",
@@ -32,6 +36,9 @@ class Tentang extends CI_Controller
 
 	public function submit_visi()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/visi"));
+		}
 		$isi = $this->input->post("isi");
 		$status = $this->TentangMdl->updateVisiMisi($isi);
 		return redirect(base_url("tentang/visi"));
@@ -53,6 +60,9 @@ class Tentang extends CI_Controller
 
 	public function edit_struktur()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/struktur"));
+		}
 		$konten = $this->TentangMdl->getKontenStruktur();
 		$data = array(
 			"page_title" => "Struktur Organisasi dan Tupoksi",
@@ -63,6 +73,9 @@ class Tentang extends CI_Controller
 
 	public function submit_struktur()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/struktur"));
+		}
 		$isi = $this->input->post("isi");
 		$status = $this->TentangMdl->updateStruktur($isi);
 		return redirect(base_url("tentang/struktur"));
@@ -84,6 +97,9 @@ class Tentang extends CI_Controller
 
 	public function edit_program()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/program"));
+		}
 		$konten = $this->TentangMdl->getKontenProgram();
 		$data = array(
 			"page_title" => "Program dan Sasaran",
@@ -94,6 +110,9 @@ class Tentang extends CI_Controller
 
 	public function submit_program()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/program"));
+		}
 		$isi = $this->input->post("isi");
 		$status = $this->TentangMdl->updateProgram($isi);
 		return redirect(base_url("tentang/program"));
@@ -116,6 +135,9 @@ class Tentang extends CI_Controller
 
 	public function edit_kegiatan()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/kegiatan"));
+		}
 		$konten = $this->TentangMdl->getKontenKegiatan();
 		$data = array(
 			"page_title" => "Kegiatan",
@@ -126,6 +148,9 @@ class Tentang extends CI_Controller
 
 	public function submit_kegiatan()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("tentang/kegiatan"));
+		}
 		$isi = $this->input->post("isi");
 		$status = $this->TentangMdl->updateKegiatan($isi);
 		return redirect(base_url("tentang/kegiatan"));

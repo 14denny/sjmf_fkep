@@ -29,61 +29,66 @@
 <!-- END: Head-->
 
 <body class="horizontal-layout page-header-light horizontal-menu preload-transitions 1-column login-bg   blank-page blank-page" data-open="click" data-menu="horizontal-menu" data-col="1-column">
-<div class="row">
-	<div class="col s12">
-		<div class="container">
-			<div id="login-page" class="row">
-				<div class="col s12 m6 l4 z-depth-4 card-panel border-radius-6 login-card bg-opacity-8">
-					<form class="login-form">
-						<div class="row">
-							<div class="input-field col s12">
-								<h5 class="ml-4">Sign in</h5>
+	<div class="row">
+		<div class="col s12">
+			<div class="container">
+				<div id="login-page" class="row">
+					<div class="col s12 m6 l4 z-depth-4 card-panel border-radius-6 login-card bg-opacity-8">
+						<form action="<?php echo base_url('admin/login') ?>" class="login-form" method="post">
+							<div class="row">
+								<div class="input-field col s12">
+									<h5 class="ml-4">Sign in</h5>
+								</div>
 							</div>
-						</div>
-						<div class="row margin">
-							<div class="input-field col s12">
-								<i class="material-icons prefix pt-2">person_outline</i>
-								<input id="username" type="text">
-								<label for="username" class="center-align">Username</label>
+							<div class="row margin">
+								<?php if ($this->session->flashdata("error")) { ?>
+									<div class="red-text text-darken-2">
+										<p style="text-align: center;">Invalid username or password</p>
+									</div>
+								<?php } ?>
+								<div class="input-field col s12">
+									<i class="material-icons prefix pt-2">person_outline</i>
+									<input id="username" name="username" type="text" required>
+									<label for="username" class="center-align">Username</label>
+								</div>
 							</div>
-						</div>
-						<div class="row margin">
-							<div class="input-field col s12">
-								<i class="material-icons prefix pt-2">lock_outline</i>
-								<input id="password" type="password">
-								<label for="password">Password</label>
+							<div class="row margin">
+								<div class="input-field col s12">
+									<i class="material-icons prefix pt-2">lock_outline</i>
+									<input id="password" name="password" type="password" required>
+									<label for="password">Password</label>
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="input-field col s12">
-								<a href="index.html" class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12">Login</a>
+							<div class="row">
+								<div class="input-field col s12">
+									<button class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12">Login</button>
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="input-field col s12" style="text-align: right">
-								<p class="margin right-align medium-small"><a href="<?php echo base_url() ?>">Kembali ke Beranda</a></p>
+							<div class="row">
+								<div class="input-field col s12" style="text-align: right">
+									<p class="margin right-align medium-small"><a href="<?php echo base_url() ?>">Kembali ke Beranda</a></p>
+								</div>
 							</div>
-						</div>
-					</form>
+						</form>
+					</div>
 				</div>
 			</div>
+			<div class="content-overlay"></div>
 		</div>
-		<div class="content-overlay"></div>
 	</div>
-</div>
 
-<!-- BEGIN VENDOR JS-->
-<script src="<?php echo base_url('assets/app-assets/js/vendors.min.js') ?>"></script>
-<!-- BEGIN VENDOR JS-->
-<!-- BEGIN PAGE VENDOR JS-->
-<!-- END PAGE VENDOR JS-->
-<!-- BEGIN THEME  JS-->
-<script src="<?php echo base_url('assets/app-assets/js/plugins.js') ?>"></script>
-<script src="<?php echo base_url('assets/app-assets/js/search.js') ?>"></script>
-<script src="<?php echo base_url('assets/app-assets/js/custom/custom-script.js') ?>"></script>
-<!-- END THEME  JS-->
-<!-- BEGIN PAGE LEVEL JS-->
-<!-- END PAGE LEVEL JS-->
+	<!-- BEGIN VENDOR JS-->
+	<script src="<?php echo base_url('assets/app-assets/js/vendors.min.js') ?>"></script>
+	<!-- BEGIN VENDOR JS-->
+	<!-- BEGIN PAGE VENDOR JS-->
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN THEME  JS-->
+	<script src="<?php echo base_url('assets/app-assets/js/plugins.js') ?>"></script>
+	<script src="<?php echo base_url('assets/app-assets/js/search.js') ?>"></script>
+	<script src="<?php echo base_url('assets/app-assets/js/custom/custom-script.js') ?>"></script>
+	<!-- END THEME  JS-->
+	<!-- BEGIN PAGE LEVEL JS-->
+	<!-- END PAGE LEVEL JS-->
 </body>
 
 </html>

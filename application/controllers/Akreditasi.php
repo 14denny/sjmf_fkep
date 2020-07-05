@@ -4,6 +4,7 @@ class Akreditasi extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model("AdminMdl");
 	}
 
 	public function index()
@@ -28,6 +29,9 @@ class Akreditasi extends CI_Controller
 
 	public function edit()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("akreditasi"));
+		}
 		$this->load->model("ViewMdl");
 		$this->load->model("AkreditasiMdl");
 
@@ -46,6 +50,9 @@ class Akreditasi extends CI_Controller
 
 	public function submit()
 	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("akreditasi"));
+		}
 		$this->load->model("ViewMdl");
 		$this->load->model("AkreditasiMdl");
 
@@ -82,10 +89,10 @@ class Akreditasi extends CI_Controller
 			if ($status > 0) {
 				redirect(base_url('akreditasi'));
 			} else {
-				echo "gagal";
+				redirect(base_url('akreditasi'));
 			}
 		} else {
-			echo "gagal";
+			redirect(base_url('akreditasi'));
 		}
 	}
 }

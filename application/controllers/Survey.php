@@ -6,6 +6,7 @@ class Survey extends CI_Controller
 		parent::__construct();
 		$this->load->model("ViewMdl");
 		$this->load->model("SurveyMdl");
+		$this->load->model("AdminMdl");
 	}
 
 

@@ -31,9 +31,11 @@
 							<div class="col s12">
 								<div class="card">
 									<div class="card-content">
-										<p style="text-align: right;">
-											<a href="<?php echo base_url('tentang/edit_kegiatan') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Konten Kegiatan</button></a>
-										</p>
+										<?php if ($this->AdminMdl->isLoggedIn()) { ?>
+											<p style="text-align: right;">
+												<a href="<?php echo base_url('tentang/edit_kegiatan') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Konten Kegiatan</button></a>
+											</p>
+										<?php } ?>
 										<div class="row ql-editor" style="white-space: normal;">
 											<?php echo $konten ?>
 										</div>

@@ -32,7 +32,11 @@
 							<div class="col s12">
 								<div class="card">
 									<div class="card-content">
-										<a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Konten Visi Misi</button></a>
+										<?php if ($this->AdminMdl->isLoggedIn()) { ?>
+											<p style="text-align: right;">
+												<a href="<?php echo base_url('tentang/edit_visi_misi') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Konten Visi Misi</button></a>
+											</p>
+										<?php } ?>
 										<div class="row ql-editor" style="white-space: normal;">
 											<?php echo $konten ?>
 										</div>
@@ -130,10 +134,10 @@
 			let btn = $(this)
 			let hasil = $("#overview")
 			let snow_wrapper = $("#snow-wrapper")
-			if(btn.data("action") === "result"){ // kalo data-action === result artinya editor yang visible
+			if (btn.data("action") === "result") { // kalo data-action === result artinya editor yang visible
 				//ambil data dari editor dan masukkan ke div overview
 				hasil.html(editor.root.innerHTML)
-	
+
 				snow_wrapper.slideUp('normal', function() {
 					hasil.slideDown()
 				})
@@ -152,8 +156,8 @@
 		})
 
 		//handler untuk tombol submit
-		$("#submit").click(function(){
-			if(!confirm("Anda yakin telah selesai melakukan perubahan?")){
+		$("#submit").click(function() {
+			if (!confirm("Anda yakin telah selesai melakukan perubahan?")) {
 				return;
 			}
 
