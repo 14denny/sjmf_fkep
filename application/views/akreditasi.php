@@ -29,9 +29,11 @@
 					</p>
 
 				</blockquote>
-				<p class="mb-1 mr-1" style="text-align: right;">
-					<a href="<?php echo base_url('akreditasi/edit') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Akreditasi</button></a>
-				</p>
+				<?php if ($this->AdminMdl->isLoggedIn()) { ?>
+					<p class="mb-1 mr-1" style="text-align: right;">
+						<a href="<?php echo base_url('akreditasi/edit') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Akreditasi</button></a>
+					</p>
+				<?php } ?>
 				<div class="row">
 					<div class="col s12">
 					</div>
@@ -47,7 +49,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<?php foreach ($data_akreditasi as $data){ ?>
+								<?php foreach ($data_akreditasi as $data) { ?>
 									<tr>
 										<td style="text-align: center;"><?php echo $data->prodi ?></td>
 										<td style="text-align: center;"><?php echo $data->jenjang ?></td>
@@ -59,7 +61,7 @@
 						</table>
 					</div>
 				</div>
-				<?php if($akreditasi->ket != "" && $akreditasi->ket != null) { ?>
+				<?php if ($akreditasi->ket != "" && $akreditasi->ket != null) { ?>
 					<p>
 						<br><br>
 						<span class="card-alert card amber darken-1 white-text pd-text">&ensp;Keterangan: &ensp;</span>&nbsp;

@@ -1,11 +1,14 @@
 <?php
-class Pengurus extends CI_Controller {
+class Pengurus extends CI_Controller
+{
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model("AdminMdl");
 	}
 
-	public function index(){
+	public function index()
+	{
 		$this->load->model("ViewMdl");
 		$this->load->model("PengurusMdl");
 
@@ -14,10 +17,14 @@ class Pengurus extends CI_Controller {
 			"page_title" => "Pengurus SJMF FKEP",
 			"all_pengurus" => $all_pengurus
 		);
-		$this->ViewMdl->loadView("pengurus",$data);
+		$this->ViewMdl->loadView("pengurus", $data);
 	}
 
-	public function edit(){
+	public function edit()
+	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("pengurus"));
+		}
 		$this->load->model("ViewMdl");
 		$this->load->model("PengurusMdl");
 
@@ -26,10 +33,14 @@ class Pengurus extends CI_Controller {
 			"page_title" => "Pengurus SJMF FKEP",
 			"all_pengurus" => $all_pengurus
 		);
-		$this->ViewMdl->loadView("edit_pengurus",$data);
+		$this->ViewMdl->loadView("edit_pengurus", $data);
 	}
 
-	public function submit(){
+	public function submit()
+	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url("pengurus"));
+		}
 		$this->load->model("PengurusMdl");
 		$this->load->model("ViewMdl");
 
@@ -37,20 +48,14 @@ class Pengurus extends CI_Controller {
 		$jabatan = $this->input->post("jabatan[]");
 
 		$data = [];
-		for($i=0; $i<sizeof($nama); $i++){
+		for ($i = 0; $i < sizeof($nama); $i++) {
 			array_push($data, array(
 				"nama" => $nama[$i],
 				"jabatan" => $jabatan[$i]
 			));
-		 }
-		 
-		 $status = $this->PengurusMdl->input_pengurus($data);
-		//  if ($status > 0){
-		// 	 echo "berhasil";
-		//  } else {
-		// 	 echo "terjadi kesalahan"
-		//  }
+		}
+
+		$status = $this->PengurusMdl->input_pengurus($data);
 		return redirect(base_url("pengurus"));
-		// return $this->ViewMdl->loadView("pengurus",$data);
 	}
 }
