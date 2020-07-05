@@ -17,6 +17,9 @@
 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 976db96f984ef971ac779d0962c5bbeca8d00ccb
 <!--START HOW TO SURVEY-->
 <div class="row">
 	<div class="col s12">
@@ -32,7 +35,11 @@
 								menampilkan data hasil survey tentang Web.
 								<br>
 								Grafik <span class="card-alert card  blue darken-2  white-text pd-text">&nbsp;Survey Perkuliahan&nbsp;</span>untuk
+<<<<<<< HEAD
 								menampilkand data hasil survey perkuliahan.
+=======
+								menampilkan data hasil survey perkuliahan.
+>>>>>>> 976db96f984ef971ac779d0962c5bbeca8d00ccb
 							</p>
 						</blockquote>
 					</div>
@@ -43,6 +50,7 @@
 </div>
 <!--END HOW TO SURVEY-->
 
+<<<<<<< HEAD
 <!-- START CATEGORY -->
 <div class="row">
 	<div class="col s12">
@@ -93,6 +101,8 @@
 
 
 =======
+=======
+>>>>>>> 976db96f984ef971ac779d0962c5bbeca8d00ccb
 <!-- BEGIN: Page Main-->
 <div id="main">
    <div class="row">
@@ -103,7 +113,7 @@
                   <div class="col s12">
                      <div class="card">
                         <div class="card-content">
-                           <h4 class="card-title">Hasil Survey</h4>
+                           <h4 class="card-title">Grafik Hasil Survey</h4>
                            <div class="row mb-2">
                               <div class="input-field col s5">
                                  <select id="select_survey">
@@ -308,4 +318,7 @@
 
    })
 </script>
+<<<<<<< HEAD
 >>>>>>> f7e85aca729890d8cc425cb24f93e9d889008d4a
+=======
+>>>>>>> 976db96f984ef971ac779d0962c5bbeca8d00ccb

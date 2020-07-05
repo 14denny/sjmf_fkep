@@ -37,7 +37,7 @@
 		<li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="Javascript:void(0)"><i class="material-icons">folder_open</i><span class="dropdown-title downsized" data-i18n="Survey">Survey</span></a>
 			<div class="collapsible-body">
 				<ul class="collapsible collapsible-sub" data-collapsible="accordion">
-					<li><a class="" href=""><i class="material-icons">mood</i><span class="downsized" data-i18n="Survey Kemudahan dan Kelengkapan Informasi Web">Survey Kemudahan Informasi Web</span></a>
+					<li><a class="" href=""><i class="material-icons">mood</i><span class="downsized" data-i18n="Survey Kemudahan dan Kelengkapan Informasi Web">Survey Kemudahan Web</span></a>
 					</li>
 					<li><a class="" href=""><i class="material-icons">school</i><span class="downsized" data-i18n="Survey Perkuliahan">Survey Perkuliahan</span></a>
 					</li>

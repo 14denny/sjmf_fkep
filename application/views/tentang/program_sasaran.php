@@ -32,7 +32,7 @@
 								<div class="card">
 									<div class="card-content">
 										<p style="text-align: right;">
-											<a href="<?php echo base_url('tentang/edit_program') ?>"><button class="btn waves-effect waves-light cyan">Edit Konten Program dan Sasaran</button></a>
+											<a href="<?php echo base_url('tentang/edit_program') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Konten Program dan Sasaran</button></a>
 										</p>
 										<div class="row ql-editor" style="white-space: normal;">
 											<?php echo $konten ?>

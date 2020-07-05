@@ -30,7 +30,7 @@
 								<div class="card">
 									<div class="card-content">
 										<p style="text-align: right;">
-											<a href="<?php echo base_url('tentang/edit_struktur') ?>"><button class="btn waves-effect waves-light cyan">Edit Konten Struktur Organisasi dan Tupokasi</button></a>
+											<a href="<?php echo base_url('tentang/edit_struktur') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Konten Struktur Organisasi dan Tupokasi</button></a>
 										</p>
 										<div class="row ql-editor" style="white-space: normal;">
 											<?php echo $konten ?>

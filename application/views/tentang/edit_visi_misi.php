@@ -12,7 +12,7 @@
 					</li>
 					<li class="breadcrumb-item"><a href="#">Tentang Kami</a>
 					</li>
-					<li class="breadcrumb-item active">Visi, Misi & Tujuan
+					<li class="breadcrumb-item active">Edit Konten Visi, Misi & Tujuan
 					</li>
 				</ol>
 			</div>
@@ -34,8 +34,8 @@
 									<div class="card-content">
 										<h4 class="card-title">Edit Konten Visi Misi</h4>
 										<div class="row">
-											<button class="float-right mr-1 btn waves-effect waves-light cyan" data-action="result" id="toggle">Lihat Hasil</button>
-											<div class="col s12">
+											<button class="float-right mr-1 btn waves-effect waves-light cyan" data-action="result" id="toggle"><i class="material-icons left">remove_red_eye</i>Lihat Hasil</button>
+											<div class="col s12 mt-1">
 												<div id="snow-wrapper">
 													<div id="snow-container">
 														<div class="editor">
@@ -43,10 +43,13 @@
 														</div>
 													</div>
 												</div>
-												<div id="overview" class="ql-editor" style="display: none; white-space: normal;">
+												<div id="overview" class="ql-editor"
+													 style="display: none; white-space: normal;">
 												</div>
 												<p><br>
-												<button class="btn waves-effect waves-light cyan" id="submit">Selesai</button>
+													<button class="btn right waves-effect waves-light cyan" id="submit">
+														Selesai
+													</button>
 											</div>
 										</div>
 									</div>
@@ -67,7 +70,7 @@
 
 
 <script>
-	$(document).ready(function() {
+	$(document).ready(function () {
 
 		////////////////////////// Load Page Script //////////////////////////
 		$('<link/>', {
@@ -143,20 +146,20 @@
 
 
 		//handler untuk tombol lihat hasil
-		$("#toggle").click(function() {
+		$("#toggle").click(function () {
 			let btn = $(this)
 			let hasil = $("#overview")
 			let snow_wrapper = $("#snow-wrapper")
-			if(btn.data("action") === "result"){ // kalo data-action === result artinya editor yang visible
+			if (btn.data("action") === "result") { // kalo data-action === result artinya editor yang visible
 				//ambil data dari editor dan masukkan ke div overview
 				hasil.html(editor.root.innerHTML)
-	
-				snow_wrapper.slideUp('normal', function() {
+
+				snow_wrapper.slideUp('normal', function () {
 					hasil.slideDown()
 				})
 
 				btn.data("action", "edit")
-				btn.html("Ubah")
+				btn.html("<i class='material-icons left'>reply</i>Ubah")
 			} else { // kalo data-action === edit (else) artinya overview hasil yang visible
 				hasil.slideUp('normal', function() {
 					snow_wrapper.slideDown()
@@ -164,13 +167,13 @@
 
 				btn.data("action", "result")
 				// $(this).html("Lihat Hasil")
-				btn.html("Lihat Hasil")
+				btn.html("<i class='material-icons left'>remove_red_eye</i>Lihat Hasil")
 			}
 		})
 
 		//handler untuk tombol submit
-		$("#submit").click(function(){
-			if(!confirm("Anda yakin telah selesai melakukan perubahan?")){
+		$("#submit").click(function () {
+			if (!confirm("Anda yakin telah selesai melakukan perubahan?")) {
 				return;
 			}
 

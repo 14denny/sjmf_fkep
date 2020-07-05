@@ -10,7 +10,7 @@
 					</li>
 					<li class="breadcrumb-item"><a href="#">Pengurus SJMF</a>
 					</li>
-					<li class="breadcrumb-item active">Edit
+					<li class="breadcrumb-item active">Edit Pengurus SJMF FKEP
 					</li>
 				</ol>
 			</div>
@@ -52,7 +52,7 @@
 										</div>
 									<?php } ?>
 								</div>
-								<button class="btn waves-effect waves-light cyan">Selesai</button>
+								<button class="btn right waves-effect waves-light cyan">Selesai</button>
 							</form>
 
 						</div>

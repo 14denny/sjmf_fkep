@@ -14,6 +14,15 @@
 					<input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Pencarian" data-search="template-list">
 					<ul class="search-list collection display-none"></ul>
 				</div>
+				<ul class="navbar-list right">
+					<li>
+						<a href="javascript:void(0);" style="font-weight: bolder">Hai, Denny Syaputra Pus</a>
+					</li>
+
+					<li>
+						<a href="#" style="font-weight: bolder">Logout</a>
+					</li>
+				</ul>
 			</div>
 			<nav class="display-none search-sm">
 				<div class="nav-wrapper">

@@ -257,7 +257,8 @@
 							</div>
 							<div class="collapsible-body cyan lighten-5 lighten-5">
 								<p>
-									Survey ini bertujuan untuk mengetahui tingkat kemudahan dan kelengkapan informasi yang
+									Survey ini bertujuan untuk mengetahui tingkat kemudahan dan kelengkapan informasi
+									yang
 									tersedia di web SJMF FKEP Unsyiah.
 									<br>
 									Isilah pertanyaan-pertanyaan dibawah ini dengan skala 1-10.
@@ -276,127 +277,223 @@
 		<div class="col s12 m12 l12">
 			<div id="prism" class="card card card-default scrollspy">
 				<div class="card-content">
-					<h4 class="card-title">Survey Kemudahan dan Kelengkapan Informasi Web</h4>
+					<h4 class="card-title" style="font-weight: bolder; text-align: center;">Survey Kemudahan dan
+						Kelengkapan Informasi Web</h4>
 					<div class="row">
 						<div class="col s12">
 							<?php if ($status_survey) { ?>
-								<p style="text-align: center;">
-									<img width="50%" src="<?php echo base_url("assets/app-assets/images/cards/thanks.png") ?>" alt="Thanks!">
+								<p style="text-align: center; margin-top: 20px">
+									<img width="50%"
+										 src="<?php echo base_url("assets/app-assets/images/cards/thanks.png") ?>"
+										 alt="Thanks!">
 								</p>
 							<?php } else { ?>
-								<form id="form_survey" action="<?php echo base_url("survey/submit_kemudahan") ?>" method="post">
+								<form id="form_survey"
+									  action="<?php echo base_url("survey/submit_kemudahan") ?>"
+									  method="post">
 									<table class="table table-striped table-hover">
 										<thead>
-											<tr style="font-size: medium; font-weight: bolder">
-												<td>Pertanyaan</td>
-												<td>Jawaban</td>
-											</tr>
+										<tr style="font-size: larger; font-weight: bolder; padding-left: 50px">
+											<td></td>
+											<td style="padding-left: 12px">1</td>
+											<td style="padding-left: 12px">2</td>
+											<td style="padding-left: 12px">3</td>
+											<td style="padding-left: 12px">4</td>
+											<td style="padding-left: 12px">5</td>
+											<td style="padding-left: 12px">6</td>
+											<td style="padding-left: 12px">7</td>
+											<td style="padding-left: 12px">8</td>
+											<td style="padding-left: 12px">9</td>
+											<td style="padding-left: 9px">10</td>
+										</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1. Seberapa mudah Anda menggunakan Web ini?</td>
-												<td>
-													<div class="container" style="padding: 20px">
-														<div class="row">
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="1" checked required />
-																<span>1</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="2"/>
-																<span>2</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="3"/>
-																<span>3</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="4"/>
-																<span>4</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="5"/>
-																<span>5</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="6"/>
-																<span>6</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="7"/>
-																<span>7</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="8"/>
-																<span>8</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="9"/>
-																<span>9</span>
-															</label>
-															<label>
-																<input class="with-gap" name="kemudahan" type="radio" value="10"/>
-																<span>10</span>
-															</label>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>2. Seberapa informatif Web ini?</td>
-												<td>
-													<div class="container" style="padding: 20px">
-														<div class="row">
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="1" checked required />
-																<span>1</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="2"/>
-																<span>2</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="3"/>
-																<span>3</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="4"/>
-																<span>4</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="5"/>
-																<span>5</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="6" />
-																<span>6</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="7"/>
-																<span>7</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="8"/>
-																<span>8</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio" value="9"/>
-																<span>9</span>
-															</label>
-															<label>
-																<input class="with-gap" name="informatif" type="radio"  value="10"/>
-																<span>10</span>
-															</label>
-														</div>
-													</div>
-												</td>
-											</tr>
+										<!--START QUESTION 1-->
+										<tr>
+											<td style="padding-top: 20px">1. Seberapa mudah Anda menggunakan Web ini?
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="1" checked required/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="2"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="3"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="4"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="5"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="6"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="7"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="8"/>
+													<span></span>
+												</label></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="9"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="kemudahan" type="radio"
+														   value="10"/>
+													<span></span>
+												</label>
+											</td>
+										</tr>
+										<!--END QUESTION 2-->
+
+										<!--START QUESTION 2-->
+										<tr>
+											<td style="padding-top: 20px">2. Seberapa informatif Web ini?</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="1"
+														   checked required/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="2"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="3"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="4"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="5"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="6"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="7"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="8"/>
+													<span></span>
+												</label></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="9"/>
+													<span></span>
+												</label>
+											</td>
+											<td style="padding-top: 20px">
+												<label>
+													<input class="with-gap"
+														   name="informatif"
+														   type="radio" value="10"/>
+													<span></span>
+												</label>
+											</td>
+										</tr>
+										<!--END QUESTION 2-->
 										</tbody>
 									</table>
 
-									<p class="mt-2">
-										<button type="button" id="button" class="float-right mr-1 btn waves-effect waves-light cyan">Submit Survey</button>
-									</p>
+									<div class="row">
+										<div class="input-field col s12">
+											<button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+												Submit Survey
+												<i class="material-icons right">send</i>
+											</button>
+										</div>
+									</div>
 								</form>
 
 							<?php } ?>
@@ -411,7 +508,7 @@
 </div>
 
 <script>
-	$(document).ready(function() {
+	$(document).ready(function () {
 		$('<script/>', {
 			type: 'text/javascript',
 			src: '<?php echo base_url('assets/app-assets/vendors/sweetalert/sweetalert.min.js') ?>'
@@ -421,7 +518,7 @@
 
 <?php if ($status_survey) { ?>
 	<script>
-		$(document).ready(function() {
+		$(document).ready(function () {
 			swal({
 				title: 'Anda telah mengisi survey ini',
 				icon: 'success'
@@ -430,9 +527,9 @@
 	</script>
 <?php } else { ?>
 	<script>
-		$(document).ready(function() {
+		$(document).ready(function () {
 
-			$("#button").click(function() {
+			$("#button").click(function () {
 				swal({
 					title: "Apa anda yakin dengan nilai survey tersebut?",
 					icon: "info",
@@ -440,7 +537,7 @@
 						cancel: true,
 						confirm: true,
 					}
-				}).then(function(isConfirm) {
+				}).then(function (isConfirm) {
 					if (isConfirm) {
 						$("#form_survey").submit();
 					}
