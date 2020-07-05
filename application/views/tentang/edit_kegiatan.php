@@ -6,11 +6,13 @@
 			<div class="col s10 m12 l12 breadcrumbs-left">
 				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF Fakultas Keperawatan Unsyiah</span></h5>
 				<ol class="breadcrumbs mb-0">
-					<li class="breadcrumb-item"><a href="#">Beranda</a>
+					<li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Beranda</a>
 					</li>
 					<li class="breadcrumb-item"><a href="#">Tentang Kami</a>
 					</li>
-					<li class="breadcrumb-item active">Edit Kegiatan
+					<li class="breadcrumb-item"><a href="<?php echo base_url("tentang/kegiatan") ?>">Kegiatan</a>
+					</li>
+					<li class="breadcrumb-item active">Edit
 					</li>
 				</ol>
 			</div>
