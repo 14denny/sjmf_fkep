@@ -639,7 +639,7 @@
     };
 
     /**
-     * Checks if a value can be safely coerced to a number. This _includes all values except null which result in finite numbers when coerced. This excludes NaN, since it's not finite.
+     * Checks if a value can be safely coerced to a number. This includes all values except null which result in finite numbers when coerced. This excludes NaN, since it's not finite.
      *
      * @memberof Chartist.Core
      * @param value
@@ -1855,7 +1855,7 @@
     }
 
     /**
-     * This method can be called on the API object of each chart and will un-register all event listeners that were added to other components. This currently _includes a window.resize listener as well as media query listeners if any responsive options have been provided. Use this function if you need to destroy and recreate Chartist charts dynamically.
+     * This method can be called on the API object of each chart and will un-register all event listeners that were added to other components. This currently includes a window.resize listener as well as media query listeners if any responsive options have been provided. Use this function if you need to destroy and recreate Chartist charts dynamically.
      *
      * @memberof Chartist.Base
      */

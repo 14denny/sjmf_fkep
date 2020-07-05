@@ -2,12 +2,6 @@
 	Style file contain theme components style
 -------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,600);
-
-/*.downsized*/
-/*{*/
-/*	font-size: xx-small !important;*/
-/*}*/
-
 .materialize-red
 {
     background-color: #e51c23 !important;
@@ -8450,7 +8444,7 @@ span.badge.pill
 
     position: absolute;
     top: 6px;
-    left: 24px;
+    left: 80px;
 
     -webkit-transition: color 200ms ease;
             transition: color 200ms ease;
@@ -8470,8 +8464,8 @@ span.badge.pill
     display: block;
 
     box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 0;
+    width: 90%;
+    margin-left: 60px;
     padding: 8px 8px 8px 65px;
 
     -webkit-transition: all 200ms ease;
@@ -9350,11 +9344,11 @@ nav.display-none.search-sm .nav-wrapper form .input-field i
 .sidenav li > a,
 .sidenav li a.collapsible-header
 {
-	font-weight: 400;
-	line-height: 44px;
+    font-weight: 400;
+    line-height: 44px;
 
-	height: 44px;
-	padding: 0 10px !important;
+    height: 44px;
+    padding: 0 16px !important;
 }
 
 .sidenav li > a > i.material-icons,
@@ -9363,7 +9357,7 @@ nav.display-none.search-sm .nav-wrapper form .input-field i
     line-height: 44px;
 
     height: 44px;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
 }
 
 .sidenav li > a:not(.active):hover

@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/data-tables/css/jquery.dataTables.min.css') ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css') ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/data-tables/css/select.dataTables.min.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/noUiSlider/nouislider.min.css') ?>">
 	<!-- END: VENDOR CSS-->
 	<!-- BEGIN: Page Level CSS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/themes/horizontal-menu-template/materialize.css') ?>">
@@ -32,6 +33,5 @@
 
 	<!-- Load Jquery -->
 	<script src="<?php echo base_url('assets/app-assets/js/jquery.min.js') ?>"></script>
-
 </head>
 <!-- END: Head-->

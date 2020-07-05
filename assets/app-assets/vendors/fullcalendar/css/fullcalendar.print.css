@@ -149,7 +149,7 @@
 .fc-time-grid .fc-event .fc-time span {
   display: none; }
 
-/* ...replace it with a more verbose version (_includes AM/PM) stored in an html attribute */
+/* ...replace it with a more verbose version (includes AM/PM) stored in an html attribute */
 .fc-time-grid .fc-event .fc-time:after {
   content: attr(data-full); }
 

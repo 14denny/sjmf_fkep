@@ -29,8 +29,8 @@
 					</p>
 
 				</blockquote>
-				<p class="mb-1" style="text-align: right;">
-					<a href="<?php echo base_url("akreditasi/edit") ?>" class="btn waves-effect waves-light cyan">Edit Akreditasi</a>
+				<p class="mb-1 mr-1" style="text-align: right;">
+					<a href="<?php echo base_url('akreditasi/edit') ?>"><button class="btn waves-effect waves-light cyan"><i class="material-icons left">edit</i>Edit Akreditasi</button></a>
 				</p>
 				<div class="row">
 					<div class="col s12">

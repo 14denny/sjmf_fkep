@@ -1378,7 +1378,7 @@ $.validator.addMethod( "skip_or_fill_minimum", function( value, element, options
  * Can include US Territories or not - default does not
  * Can include US Military postal abbreviations (AA, AE, AP) - default does not
  *
- * Note: "States" always _includes DC (District of Colombia)
+ * Note: "States" always includes DC (District of Colombia)
  *
  * Usage examples:
  *
