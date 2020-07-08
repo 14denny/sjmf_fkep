@@ -39,7 +39,7 @@
 								<p>
 									Survey ini bertujuan untuk mengetahui tingkat kemudahan dan kelengkapan informasi
 									yang
-									tersedia di web SJMF FKEP Unsyiah.
+									tersedia di web SJMF Fakultas Keperawatan Unsyiah.
 									<br>
 									Isilah pertanyaan-pertanyaan dibawah ini dengan skala 1-10.
 								</p>

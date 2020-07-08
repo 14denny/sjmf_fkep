@@ -10,7 +10,7 @@ class Kontak extends CI_Controller {
 		$this->load->model("ViewMdl");
 
 		$data = array(
-			"page_title" => "Kontak SJMF FKEP"
+			"page_title" => "Kontak SJMF Fakultas Keperawatan"
 		);
 		$this->ViewMdl->loadView("kontak",$data);
 	}

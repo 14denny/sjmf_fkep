@@ -14,7 +14,7 @@ class Pengurus extends CI_Controller
 
 		$all_pengurus = $this->PengurusMdl->getAllPengurus();
 		$data = array(
-			"page_title" => "Pengurus SJMF FKEP",
+			"page_title" => "Pengurus SJMF Fakultas Keperawatan",
 			"all_pengurus" => $all_pengurus
 		);
 		$this->ViewMdl->loadView("pengurus", $data);
@@ -30,7 +30,7 @@ class Pengurus extends CI_Controller
 
 		$all_pengurus = $this->PengurusMdl->getAllPengurus();
 		$data = array(
-			"page_title" => "Pengurus SJMF FKEP",
+			"page_title" => "Pengurus SJMF Fakultas Keperawatan",
 			"all_pengurus" => $all_pengurus
 		);
 		$this->ViewMdl->loadView("edit_pengurus", $data);

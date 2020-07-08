@@ -16,14 +16,14 @@ class Index extends CI_Controller
 
 		$slider = $this->BerandaMdl->getSliderImages();
 		$konten = $this->BerandaMdl->getKonten();
+		$marquee = $this->BerandaMdl->getMarquee();
 
 		$data = array(
 			"page_title" => "Beranda",
 			"slider_images" => $slider,
-			"konten" => $konten->konten
+			"konten" => $konten->konten,
+			"marquee"=>$marquee->isi
 		);
-
-		// echo "<pre>".print_r($slider,true)."</pre>";
 		return $this->ViewMdl->loadView("index", $data);
 	}
 
@@ -56,5 +56,30 @@ class Index extends CI_Controller
 		$isi = $this->input->post("isi");
 		$this->BerandaMdl->updateBeranda($isi);
 		return redirect(base_url());
+	}
+
+
+	public function submit_marquee()
+	{
+		if (!$this->AdminMdl->isLoggedIn()) {
+			return redirect(base_url());
+		}
+		$this->load->model("ViewMdl");
+		$this->load->model("BerandaMdl");
+		$isi = $this->input->post("isi");
+		$this->BerandaMdl->updateMarquee($isi);
+		return redirect(base_url());
+	}
+
+	
+	///////////////////////// edit slider /////////////////////////
+	public function edit_slider()
+	{
+		$this->load->model('ViewMdl');
+
+		$data = array(
+			"page_title" => "Beranda"
+		);
+		$this->ViewMdl->loadView("edit_slider", $data);
 	}
 }

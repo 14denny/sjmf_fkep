@@ -11,6 +11,9 @@
 	<link type="image/png" href="<?php echo base_url('assets/app-assets/images/favicon/apple-touch-icon-152x152.png') ?>">
 	<link type="image/png" href="<?php echo base_url('assets/app-assets/images/favicon/favicon-32x32.png') ?>">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/fonts/fontawesome/css/all.min.css') ?>">
+
 	<!-- BEGIN: VENDOR CSS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/vendors.min.css') ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/flag-icon/css/flag-icon.min.css') ?>">
@@ -18,6 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css') ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/data-tables/css/select.dataTables.min.css') ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/noUiSlider/nouislider.min.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/magnific-popup/magnific-popup.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/vendors/dropify/css/dropify.min.css') ?>">
 	<!-- END: VENDOR CSS-->
 	<!-- BEGIN: Page Level CSS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/themes/horizontal-menu-template/materialize.css') ?>">
@@ -25,6 +30,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/layouts/style-horizontal.css') ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/pages/dashboard.css') ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/pages/data-tables.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/pages/page-contact.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/pages/cards-basic.cs') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/pages/user-profile-page.css') ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/app-assets/css/pages/cards-basic.css') ?>">
 	<!-- END: Page Level CSS-->
 
 	<!-- BEGIN: Custom CSS-->

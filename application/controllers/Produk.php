@@ -10,7 +10,7 @@ class Produk extends CI_Controller {
 		$this->load->model("ViewMdl");
 
 		$data = array(
-			"page_title" => "Produk SJMF FKEP"
+			"page_title" => "Produk SJMF Fakultas Keperawatan"
 		);
 		$this->ViewMdl->loadView("produk",$data);
 	}

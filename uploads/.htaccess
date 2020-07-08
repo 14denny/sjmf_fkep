@@ -1,0 +1,5 @@
+RewriteEngine on
+#if the file does not have one of theses extensions
+RewriteCond %{REQUEST_URI} !\.(png|jpg|jpeg|gif|pdf|doc|docx|xls|xlsx|txt|csv)$
+#then it should be marked as forbidden.
+RewriteRule .*$ - [F]

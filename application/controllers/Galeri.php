@@ -10,9 +10,18 @@ class Galeri extends CI_Controller {
 		$this->load->model("ViewMdl");
 
 		$data = array(
-			"page_title" => "Galeri Foto SJMF FKEP"
+			"page_title" => "Galeri Foto SJMF Fakultas Keperawatan"
 		);
 		$this->ViewMdl->loadView("galeri_foto",$data);
+	}
+
+	public function lihat_foto(){
+		$this->load->model("ViewMdl");
+
+		$data = array(
+			"page_title" => "Galeri Foto SJMF Fakultas Keperawatan"
+		);
+		$this->ViewMdl->loadView("lihat_foto",$data);
 	}
 }
 

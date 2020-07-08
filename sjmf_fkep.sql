@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 04, 2020 at 08:18 AM
+-- Generation Time: Jul 07, 2020 at 12:29 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `sjmf_fkep`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `nama`, `username`, `password`) VALUES
+(1, 'Rachma', 'rachma', '$2y$10$VwPStYOtRx/cbmhdoDGyCejVoyCs1WEGoCXJpm/Q8Y.9tRlLgK9nW');
 
 -- --------------------------------------------------------
 
@@ -45,7 +65,7 @@ INSERT INTO `akreditasi` (`id`, `tanggal`, `ket`, `inserted_at`) VALUES
 (6, '2020-06-30', 'keterangan baru', '2020-06-30 14:05:16'),
 (7, '2020-06-30', 'keterangan baru', '2020-06-30 14:06:28'),
 (10, '2020-06-30', 'keterangan baru', '2020-06-30 14:10:06'),
-(11, '2020-07-02', 'keterangan baru', '2020-07-02 13:37:39');
+(11, '2020-07-01', '', '2020-07-01 13:00:33');
 
 -- --------------------------------------------------------
 
@@ -105,7 +125,9 @@ INSERT INTO `beranda` (`id`, `konten`, `inserted_at`) VALUES
 (3, '<p>Pentingnya pengawasan mutu telah diisyaratkan oleh Pemerintah sejak tahun 1990 seperti yang tertera dalam PP No. 30 thn 1990 tentang Pendidikan Tinggi pasal 121. Badan Penjaminan Mutu Akademik (BPMA) merupakan badan internal UI yang berfungsi membangun sistem penjaminan mutu akademik di UI pada setiap aras di UI mulai dari aras program studi, departemen, fakultas hingga direktorat/unit kerja di lingkungan Pusat Administrasi UI. BPMA berawal dari berdirinya Badan Audit Akademik (BAA) yang merupakan salah satu kelengkapan khusus tingkat universitas sebagaimana tertera dalam statuta UI 1992 pasal 21. BAA berdiri pada tahun 2002 melalui surat keputusan Rektor UI Nomor 123/SK/R/UI/2000 yang mengatur tentang Struktur Organisasi dan Tatalaksana Badan Audit Akademik UI.</p><p>								</p><p><br></p><p>Namun setelah dilakukan kajian yang mendalam mengenai penjaminan mutu dan audit mutu akademik, serta kewajiban mengemban tugas yang lebih luas, maka disepakati untuk mengubah nama Badan Audit Akademik menjadi Badan Penjaminan Mutu Akademik sejak tahun 2004, melalui SK Rektor UI No. 012/SK/UI/2004 tentang Struktur Pelaksana Penjaminan Mutu Akademik Universitas Indonesia. Fungsi BPMA UI dipertegas dalam Peraturan Pemerintah No. 68 tahun 2013 tentang Statuta UI, Pasal 52 ayat 3 dan 4.</p><p>								</p><p><br></p><p>Sistem Penjaminan Mutu Internal UI telah diatur dalam SK Rektor no. 1421/SK/R/UI/2010 tentang Kebijakan Sistem Penjaminan Mutu Akademik di Universitas Indonesia, yang diperbaharui dengan Peraturan Rektor No. 009 Tahun 2016 tentang Sistem Penjaminan Mutu Internal UI.</p><p>								</p><p><br></p><p>Dalam rangka meningkatkan kinerja layanan penjaminan mutu, BPMA telah menerapkan Quality Management System, dan memperoleh sertikat ISO 9001:2008 dari PT. DQS Sertification Indonesia pada bulan Februari 2013, dan re-sertifikasi ISO 9001:2015 pada bulan Juli 2018.</p>', '2020-06-29 08:04:47'),
 (4, '<p>Pentingnya pengawasan mutu telah diisyaratkan oleh Pemerintah sejak tahun 1990 seperti yang tertera dalam PP No. 30 thn 1990 tentang Pendidikan Tinggi pasal 121. Badan Penjaminan Mutu Akademik (BPMA) merupakan badan internal UI yang berfungsi membangun sistem penjaminan mutu akademik di UI pada setiap aras di UI mulai dari aras program studi, departemen, fakultas hingga direktorat/unit kerja di lingkungan Pusat Administrasi UI. BPMA berawal dari berdirinya Badan Audit Akademik (BAA) yang merupakan salah satu kelengkapan khusus tingkat universitas sebagaimana tertera dalam statuta UI 1992 pasal 21. BAA berdiri pada tahun 2002 melalui surat keputusan Rektor UI Nomor 123/SK/R/UI/2000 yang mengatur tentang Struktur Organisasi dan Tatalaksana Badan Audit Akademik UI.</p><p><br></p><p><br></p><p>Namun setelah dilakukan kajian yang mendalam mengenai penjaminan mutu dan audit mutu akademik, serta kewajiban mengemban tugas yang lebih luas, maka disepakati untuk mengubah nama Badan Audit Akademik menjadi Badan Penjaminan Mutu Akademik sejak tahun 2004, melalui SK Rektor UI No. 012/SK/UI/2004 tentang Struktur Pelaksana Penjaminan Mutu Akademik Universitas Indonesia. Fungsi BPMA UI dipertegas dalam Peraturan Pemerintah No. 68 tahun 2013 tentang Statuta UI, Pasal 52 ayat 3 dan 4.</p><p><br></p><p><br></p><p>Sistem Penjaminan Mutu Internal UI telah diatur dalam SK Rektor no. 1421/SK/R/UI/2010 tentang Kebijakan Sistem Penjaminan Mutu Akademik di Universitas Indonesia, yang diperbaharui dengan Peraturan Rektor No. 009 Tahun 2016 tentang Sistem Penjaminan Mutu Internal UI.</p><p><br></p><p><br></p><p>Dalam rangka meningkatkan kinerja layanan penjaminan mutu, BPMA telah menerapkan Quality Management System, dan memperoleh sertikat ISO 9001:2008 dari PT. DQS Sertification Indonesia pada bulan Februari 2013, dan re-sertifikasi ISO 9001:2015 pada bulan Juli 2018.</p>', '2020-06-29 08:06:20'),
 (5, '<p>Pentingnya pengawasan mutu telah diisyaratkan oleh <strong><u>Pemerintah</u></strong> sejak tahun 1990 seperti yang tertera dalam PP No. 30 thn 1990 tentang Pendidikan Tinggi pasal 121. Badan Penjaminan Mutu Akademik (BPMA) merupakan badan internal UI yang berfungsi membangun sistem penjaminan mutu akademik di UI pada setiap aras di UI mulai dari aras program studi, departemen, fakultas hingga direktorat/unit kerja di lingkungan Pusat Administrasi UI. BPMA berawal dari berdirinya Badan Audit Akademik (BAA) yang merupakan salah satu kelengkapan khusus tingkat universitas sebagaimana tertera dalam statuta UI 1992 pasal 21. BAA berdiri pada tahun 2002 melalui surat keputusan Rektor UI Nomor 123/SK/R/UI/2000 yang mengatur tentang Struktur Organisasi dan Tatalaksana Badan Audit Akademik UI.</p><p><br></p><p><br></p><p>Namun setelah dilakukan kajian yang mendalam mengenai penjaminan mutu dan audit mutu akademik, serta kewajiban mengemban tugas yang lebih luas, maka disepakati untuk mengubah nama Badan Audit Akademik menjadi Badan Penjaminan Mutu Akademik sejak tahun 2004, melalui SK Rektor UI No. 012/SK/UI/2004 tentang Struktur Pelaksana Penjaminan Mutu Akademik Universitas Indonesia. Fungsi BPMA UI dipertegas dalam Peraturan Pemerintah No. 68 tahun 2013 tentang Statuta UI, Pasal 52 ayat 3 dan 4.</p><p><br></p><p><br></p><p>Sistem Penjaminan Mutu Internal UI telah diatur dalam SK Rektor no. 1421/SK/R/UI/2010 tentang Kebijakan Sistem Penjaminan Mutu Akademik di Universitas Indonesia, yang diperbaharui dengan Peraturan Rektor No. 009 Tahun 2016 tentang Sistem Penjaminan Mutu Internal UI.</p><p><br></p><p><br></p><p>Dalam rangka meningkatkan kinerja layanan penjaminan mutu, BPMA telah menerapkan Quality Management System, dan memperoleh sertikat ISO 9001:2008 dari PT. DQS Sertification Indonesia pada bulan Februari 2013, dan re-sertifikasi ISO 9001:2015 pada bulan Juli 2018.</p>', '2020-06-29 08:08:22'),
-(7, '<p class=\"ql-align-justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem dolor, cursus vitae orci vel, porta bibendum dolor. Nunc in condimentum lorem. Mauris placerat luctus arcu, vel porttitor arcu pharetra sit amet. Curabitur et mollis lorem. Integer lorem lectus, maximus tincidunt placerat vitae, interdum non lacus. Vivamus vulputate justo lacus, eu commodo nisi scelerisque quis. Proin vitae pretium purus. In commodo ullamcorper risus in convallis. Sed euismod, tellus sit amet dictum accumsan, justo lectus commodo enim, a facilisis massa lacus nec metus.</p><p class=\"ql-align-justify\">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam dui lacus, ultricies et tincidunt lobortis, posuere non velit. Integer eu iaculis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nulla arcu, nec accumsan risus viverra in. Morbi faucibus vel nibh vitae bibendum. Ut est libero, viverra ut felis eu, tristique aliquet mi. Sed et scelerisque odio. Maecenas elit dolor, volutpat ut malesuada ut, volutpat eu turpis.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Integer in odio elit. Ut enim sem, fringilla non leo pretium, gravida sagittis nibh. Maecenas vestibulum nulla a dolor venenatis, sed commodo purus porttitor. Suspendisse potenti. Proin vel aliquet risus. Nulla sed justo viverra, convallis lacus vitae, pharetra nisi. Aliquam a tristique metus. Proin sed hendrerit massa, vitae maximus ipsum. Quisque bibendum ultrices accumsan. In convallis viverra facilisis. In fringilla orci non nunc porta placerat. Nulla accumsan, magna ac hendrerit dictum, ante libero tempus erat, vel cursus sapien diam non dui. Nullam feugiat arcu eu elit lacinia efficitur. Etiam sollicitudin tincidunt aliquam. Aliquam purus sem, gravida gravida ante quis, dapibus suscipit est.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Cras interdum dignissim fermentum. Phasellus et lectus quis purus gravida eleifend ut at eros. Etiam vulputate dolor non ligula rhoncus lacinia. Sed vel rhoncus est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ullamcorper interdum quam, ac placerat purus congue rhoncus. Ut lobortis velit quis pretium suscipit.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Nunc dapibus risus at enim commodo, sit amet posuere sapien convallis. Nam volutpat orci in varius venenatis. Quisque felis ante, pretium sollicitudin efficitur ut, dapibus id leo. Fusce eget nibh mi. Phasellus eu dui risus. Quisque dui tellus, euismod vel justo vel, commodo posuere dolor. Fusce scelerisque, ante ut faucibus feugiat, tellus lectus ullamcorper magna, a eleifend velit nisi ac libero. Quisque gravida, velit non viverra venenatis, dolor turpis semper lectus, venenatis dignissim odio nulla facilisis nulla. Mauris vehicula feugiat mi nec iaculis. In hac habitasse platea dictumst. Fusce nec risus ac nibh vulputate cursus eu id nibh. Donec mollis ante suscipit est accumsan aliquet et et libero. Quisque sit amet felis lacus. Nullam dolor orci, commodo et pellentesque eu, euismod ut ante. Nam sit amet purus sagittis, hendrerit est ac, sodales tortor. Mauris venenatis diam ac lectus fringilla, in tempor magna mollis.</p><p class=\"ql-align-justify\"><br></p><p><br></p>', '2020-06-30 11:41:38');
+(7, '<p class=\"ql-align-justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem dolor, cursus vitae orci vel, porta bibendum dolor. Nunc in condimentum lorem. Mauris placerat luctus arcu, vel porttitor arcu pharetra sit amet. Curabitur et mollis lorem. Integer lorem lectus, maximus tincidunt placerat vitae, interdum non lacus. Vivamus vulputate justo lacus, eu commodo nisi scelerisque quis. Proin vitae pretium purus. In commodo ullamcorper risus in convallis. Sed euismod, tellus sit amet dictum accumsan, justo lectus commodo enim, a facilisis massa lacus nec metus.</p><p class=\"ql-align-justify\">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam dui lacus, ultricies et tincidunt lobortis, posuere non velit. Integer eu iaculis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nulla arcu, nec accumsan risus viverra in. Morbi faucibus vel nibh vitae bibendum. Ut est libero, viverra ut felis eu, tristique aliquet mi. Sed et scelerisque odio. Maecenas elit dolor, volutpat ut malesuada ut, volutpat eu turpis.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Integer in odio elit. Ut enim sem, fringilla non leo pretium, gravida sagittis nibh. Maecenas vestibulum nulla a dolor venenatis, sed commodo purus porttitor. Suspendisse potenti. Proin vel aliquet risus. Nulla sed justo viverra, convallis lacus vitae, pharetra nisi. Aliquam a tristique metus. Proin sed hendrerit massa, vitae maximus ipsum. Quisque bibendum ultrices accumsan. In convallis viverra facilisis. In fringilla orci non nunc porta placerat. Nulla accumsan, magna ac hendrerit dictum, ante libero tempus erat, vel cursus sapien diam non dui. Nullam feugiat arcu eu elit lacinia efficitur. Etiam sollicitudin tincidunt aliquam. Aliquam purus sem, gravida gravida ante quis, dapibus suscipit est.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Cras interdum dignissim fermentum. Phasellus et lectus quis purus gravida eleifend ut at eros. Etiam vulputate dolor non ligula rhoncus lacinia. Sed vel rhoncus est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ullamcorper interdum quam, ac placerat purus congue rhoncus. Ut lobortis velit quis pretium suscipit.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Nunc dapibus risus at enim commodo, sit amet posuere sapien convallis. Nam volutpat orci in varius venenatis. Quisque felis ante, pretium sollicitudin efficitur ut, dapibus id leo. Fusce eget nibh mi. Phasellus eu dui risus. Quisque dui tellus, euismod vel justo vel, commodo posuere dolor. Fusce scelerisque, ante ut faucibus feugiat, tellus lectus ullamcorper magna, a eleifend velit nisi ac libero. Quisque gravida, velit non viverra venenatis, dolor turpis semper lectus, venenatis dignissim odio nulla facilisis nulla. Mauris vehicula feugiat mi nec iaculis. In hac habitasse platea dictumst. Fusce nec risus ac nibh vulputate cursus eu id nibh. Donec mollis ante suscipit est accumsan aliquet et et libero. Quisque sit amet felis lacus. Nullam dolor orci, commodo et pellentesque eu, euismod ut ante. Nam sit amet purus sagittis, hendrerit est ac, sodales tortor. Mauris venenatis diam ac lectus fringilla, in tempor magna mollis.</p><p class=\"ql-align-justify\"><br></p><p><br></p>', '2020-06-30 11:41:38'),
+(8, '<p class=\"ql-align-justify\"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem dolor, cursus vitae orci vel, porta bibendum dolor. Nunc in condimentum lorem. Mauris placerat luctus arcu, vel porttitor arcu pharetra sit amet. Curabitur et mollis lorem. Integer lorem lectus, maximus tincidunt placerat vitae, interdum non lacus. Vivamus vulputate justo lacus, eu commodo nisi scelerisque quis. Proin vitae pretium purus. In commodo ullamcorper risus in convallis. Sed euismod, tellus sit amet dictum accumsan, justo lectus commodo enim, a facilisis massa lacus nec metus.</strong></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam dui lacus, ultricies et tincidunt lobortis, posuere non velit. Integer eu iaculis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nulla arcu, nec accumsan risus viverra in. Morbi faucibus vel nibh vitae bibendum. Ut est libero, viverra ut felis eu, tristique aliquet mi. Sed et scelerisque odio. Maecenas elit dolor, volutpat ut malesuada ut, volutpat eu turpis.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Integer in odio elit. Ut enim sem, fringilla non leo pretium, gravida sagittis nibh. Maecenas vestibulum nulla a dolor venenatis, sed commodo purus porttitor. Suspendisse potenti. Proin vel aliquet risus. Nulla sed justo viverra, convallis lacus vitae, pharetra nisi. Aliquam a tristique metus. Proin sed hendrerit massa, vitae maximus ipsum. Quisque bibendum ultrices accumsan. In convallis viverra facilisis. In fringilla orci non nunc porta placerat. Nulla accumsan, magna ac hendrerit dictum, ante libero tempus erat, vel cursus sapien diam non dui. Nullam feugiat arcu eu elit lacinia efficitur. Etiam sollicitudin tincidunt aliquam. Aliquam purus sem, gravida gravida ante quis, dapibus suscipit est.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Cras interdum dignissim fermentum. Phasellus et lectus quis purus gravida eleifend ut at eros. Etiam vulputate dolor non ligula rhoncus lacinia. Sed vel rhoncus est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ullamcorper interdum quam, ac placerat purus congue rhoncus. Ut lobortis velit quis pretium suscipit.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Nunc dapibus risus at enim commodo, sit amet posuere sapien convallis. Nam volutpat orci in varius venenatis. Quisque felis ante, pretium sollicitudin efficitur ut, dapibus id leo. Fusce eget nibh mi. Phasellus eu dui risus. Quisque dui tellus, euismod vel justo vel, commodo posuere dolor. Fusce scelerisque, ante ut faucibus feugiat, tellus lectus ullamcorper magna, a eleifend velit nisi ac libero. Quisque gravida, velit non viverra venenatis, dolor turpis semper lectus, venenatis dignissim odio nulla facilisis nulla. Mauris vehicula feugiat mi nec iaculis. In hac habitasse platea dictumst. Fusce nec risus ac nibh vulputate cursus eu id nibh. Donec mollis ante suscipit est accumsan aliquet et et libero. Quisque sit amet felis lacus. Nullam dolor orci, commodo et pellentesque eu, euismod ut ante. Nam sit amet purus sagittis, hendrerit est ac, sodales tortor. Mauris venenatis diam ac lectus fringilla, in tempor magna mollis.</p><p class=\"ql-align-justify\"><br></p><p><br></p>', '2020-06-30 14:26:18'),
+(9, '<p class=\"ql-align-justify\">Organisasi yang sehat sangat berkaitan dengan keadaan mutunya baik aspek akademik maupun non-akademik, dan sebaliknya mutu yang baik akan menyebabkan organisasi berjalan secara baik. Upaya penjaminan mutu dalam pengelolaan satuan pendidikan tinggi dilaksanakan berdasarkan prinsip otonomi, akuntabilitas, jaminan mutu dan evaluasi yang transparan. </p><p><br></p>', '2020-07-01 00:41:18');
 
 -- --------------------------------------------------------
 
@@ -116,8 +138,17 @@ INSERT INTO `beranda` (`id`, `konten`, `inserted_at`) VALUES
 CREATE TABLE `downloads` (
   `id` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
-  `total_downloads` int(11) NOT NULL DEFAULT 0
+  `kategori` varchar(100) NOT NULL,
+  `total_downloads` int(11) NOT NULL DEFAULT 0,
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `downloads`
+--
+
+INSERT INTO `downloads` (`id`, `nama`, `kategori`, `total_downloads`, `updated_at`) VALUES
+(1, 'Tugas Akhir Denny', 'Laporan', 1, '2020-07-06 06:02:17');
 
 -- --------------------------------------------------------
 
@@ -128,8 +159,17 @@ CREATE TABLE `downloads` (
 CREATE TABLE `download_files` (
   `id` int(11) NOT NULL,
   `id_download` int(11) NOT NULL,
-  `location` varchar(255) NOT NULL
+  `location` varchar(255) NOT NULL,
+  `inserted_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `download_files`
+--
+
+INSERT INTO `download_files` (`id`, `id_download`, `location`, `inserted_at`) VALUES
+(1, 1, 'uploads/dokumen/1594040050.pdf', '2020-07-06 12:57:13'),
+(2, 1, 'uploads/dokumen/1594040501.pdf', '2020-07-06 13:02:17');
 
 -- --------------------------------------------------------
 
@@ -162,6 +202,26 @@ CREATE TABLE `kegiatan` (
 
 INSERT INTO `kegiatan` (`id`, `konten`, `inserted_at`) VALUES
 (1, '<p class=\"ql-align-center\"><strong class=\"ql-size-large ql-font-monospace\">Kegiatan</strong></p><p class=\"ql-align-center\"><br></p><p><span class=\"ql-font-serif\">Ini isi konten kegiatan...</span></p>', '2020-07-03 10:25:59');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `marquee`
+--
+
+CREATE TABLE `marquee` (
+  `id` int(11) NOT NULL,
+  `isi` longtext NOT NULL,
+  `inserted_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `marquee`
+--
+
+INSERT INTO `marquee` (`id`, `isi`, `inserted_at`) VALUES
+(1, 'Pengumuman', '2020-07-05 14:21:45'),
+(2, '<p>Pengumuman, ke halaman <a href=\"http://localhost/sjmf_fkep/download\" target=\"_blank\">dokumen.</a></p>', '2020-07-05 14:26:19');
 
 -- --------------------------------------------------------
 
@@ -202,8 +262,8 @@ CREATE TABLE `pengurus` (
 --
 
 INSERT INTO `pengurus` (`id`, `nama`, `jabatan`) VALUES
-(43, 'Bapak', 'Kepala'),
-(44, 'Ibu', 'Sekretaris');
+(49, 'Bapak', 'Ketua'),
+(50, 'Ibu', 'Sekretaris');
 
 -- --------------------------------------------------------
 
@@ -304,9 +364,10 @@ CREATE TABLE `survey_kemudahan` (
 --
 
 INSERT INTO `survey_kemudahan` (`id`, `ip`, `kemudahan`, `informatif`, `survey_time`) VALUES
-(9, '::1', 10, 10, '2020-07-03 13:12:38'),
+(9, '::4', 10, 10, '2020-07-03 13:12:38'),
 (10, '::2', 10, 9, '2020-07-03 13:18:24'),
-(11, '::3', 7, 10, '2020-07-03 13:50:29');
+(11, '::3', 7, 10, '2020-07-03 13:50:29'),
+(13, '::1', 1, 1, '2020-07-06 12:52:02');
 
 -- --------------------------------------------------------
 
@@ -333,6 +394,12 @@ INSERT INTO `visi_misi` (`id`, `konten`, `inserted_at`) VALUES
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `akreditasi`
@@ -374,6 +441,12 @@ ALTER TABLE `galleries`
 -- Indexes for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `marquee`
+--
+ALTER TABLE `marquee`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -430,6 +503,12 @@ ALTER TABLE `visi_misi`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `akreditasi`
 --
 ALTER TABLE `akreditasi`
@@ -445,19 +524,19 @@ ALTER TABLE `akreditasi_prodi`
 -- AUTO_INCREMENT for table `beranda`
 --
 ALTER TABLE `beranda`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `downloads`
 --
 ALTER TABLE `downloads`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `download_files`
 --
 ALTER TABLE `download_files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `galleries`
@@ -472,6 +551,12 @@ ALTER TABLE `kegiatan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `marquee`
+--
+ALTER TABLE `marquee`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `nilai_akreditasi`
 --
 ALTER TABLE `nilai_akreditasi`
@@ -481,7 +566,7 @@ ALTER TABLE `nilai_akreditasi`
 -- AUTO_INCREMENT for table `pengurus`
 --
 ALTER TABLE `pengurus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `photos`
@@ -511,7 +596,7 @@ ALTER TABLE `struktur`
 -- AUTO_INCREMENT for table `survey_kemudahan`
 --
 ALTER TABLE `survey_kemudahan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `visi_misi`

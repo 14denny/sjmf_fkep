@@ -8,6 +8,8 @@ class BerandaMdl extends CI_Model
         parent::__construct();
     }
 
+
+    //getter
     public function getSliderImages()
     {
         $this->db->select("*");
@@ -24,10 +26,25 @@ class BerandaMdl extends CI_Model
         return $this->db->get()->row();
     }
 
+    public function getMarquee()
+    {
+        $this->db->select("isi");
+        $this->db->from("marquee");
+        $this->db->order_by("id", "desc");
+        $this->db->limit(1);
+        return $this->db->get()->row();
+    }
 
 
+    
+    //setter
     public function updateBeranda($konten)
     {
         return $this->db->insert("beranda", array("konten" => $konten));
+    }
+
+    public function updateMarquee($isi)
+    {
+        return $this->db->insert("marquee", array("isi" => $isi));
     }
 }

@@ -3,12 +3,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s10 m12 l12 breadcrumbs-left">
-				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF FKEP</span>
+				<h5 class="breadcrumbs-title mt-0 mb-0 display-inline hide-on-small-and-down"><span>SJMF Fakultas Keperawatan</span>
 				</h5>
 				<ol class="breadcrumbs mb-0">
 					<li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Beranda</a>
 					</li>
-					<li class="breadcrumb-item active">Pengurus SJMF FKEP
+					<li class="breadcrumb-item active">Pengurus SJMF Fakultas Keperawatan
 					</li>
 				</ol>
 			</div>
@@ -27,7 +27,7 @@
 				<div class="card-content">
 					<blockquote>
 						<p>
-							<span class="">&ensp;Pengurus SJMF FKEP tahun 2020-2022. &ensp; </span>&nbsp;
+							<span class="">&ensp;Pengurus SJMF Fakultas Keperawatan tahun 2020-2022. &ensp; </span>&nbsp;
 						</p>
 					</blockquote>
 					<?php if ($this->AdminMdl->isLoggedIn()) { ?>

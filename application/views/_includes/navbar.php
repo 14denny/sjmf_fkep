@@ -52,7 +52,7 @@
 						</ul>
 					</li>
 
-					<!-- AWAL PENGURUS SJMF FKEP-->
+					<!-- AWAL PENGURUS SJMF Fakultas Keperawatan-->
 					<li><a class="bold ls_pengurus" href="<?= base_url('pengurus') ?>" data-target="DashboardDropdown"><i class="material-icons">people</i><span><span class="dropdown-title" data-i18n="Pengelola SJMF">Pengurus SJMF</span></span></a>
 					</li>
 
