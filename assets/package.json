@@ -12,7 +12,7 @@
   "homepage": "https://pixinvent.com/materialize-material-design-admin-template/landing/",
   "main": "gulpfile.js",
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "gulp-cli": "^2.2.0",
     "gulp-html-beautify": "^1.0.1",
     "gulp-w3c-html-validator": "^1.4.4",
